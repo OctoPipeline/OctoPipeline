@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoPrint Release Announcements</title>
+    
+    <link>https://octoprint.org/blog/</link>
+    <atom:link href="https://octoprint.org/feeds/releases.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Sep 2021 07:20:54 -0500</pubDate>
+    <lastBuildDate>Fri, 24 Sep 2021 07:20:54 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.7</generator>
+    
+      <item>
+        <title>New release candidate: 1.7.0rc3</title>
+        <description>
+          <![CDATA[
+            The third release candidate for the upcoming 1.7.0 release, fixing three observed regressions and two bugs in new functionality.
+          ]]>
+        </description>
+        <pubDate>Mon, 13 Sep 2021 06:35:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/09/13/new-release-candidate-1.7.0rc3/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/09/13/new-release-candidate-1.7.0rc3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release candidate: 1.7.0rc2</title>
+        <description>
+          <![CDATA[
+            The second release candidate for the upcoming 1.7.0 release, fixing two observed regressions and adding an improvement for new functionality.
+          ]]>
+        </description>
+        <pubDate>Wed, 11 Aug 2021 07:40:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/08/11/new-release-candidate-1.7.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/08/11/new-release-candidate-1.7.0rc2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release candidate: 1.7.0rc1</title>
+        <description>
+          <![CDATA[
+            The first release candidate for the upcoming 1.7.0 release, containing new features, improvements and bug fixes.
+          ]]>
+        </description>
+        <pubDate>Wed, 04 Aug 2021 08:15:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/08/04/new-release-candidate-1.7.0rc1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release: 1.6.1</title>
+        <description>
+          <![CDATA[
+            This is a bugfix release to fix two bugs in OctoPrint 1.6.0.
+          ]]>
+        </description>
+        <pubDate>Mon, 10 May 2021 08:20:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/05/10/new-release-1.6.1/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/05/10/new-release-1.6.1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release: 1.6.0</title>
+        <description>
+          <![CDATA[
+            After over 4 months of development and an almost month long RC phase, I'm proud to present you OctoPrint 1.6.0!
+          ]]>
+        </description>
+        <pubDate>Tue, 27 Apr 2021 04:15:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/27/new-release-1.6.0/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/27/new-release-1.6.0/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc3</title>
+        <description>
+          <![CDATA[
+            The third release candidate for the upcoming 1.6.0 release, with a one fix of a regression and one work around for a discovered firmware bug.
+          ]]>
+        </description>
+        <pubDate>Wed, 21 Apr 2021 09:00:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/21/new-release-candidate-1.6.0rc3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc2</title>
+        <description>
+          <![CDATA[
+            The second release candidate for the upcoming 1.6.0 release, with some fixes of regressions from the first one and some improvements in newly added functionality.
+          ]]>
+        </description>
+        <pubDate>Wed, 14 Apr 2021 08:25:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/04/14/new-release-candidate-1.6.0rc2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release candidate: 1.6.0rc1</title>
+        <description>
+          <![CDATA[
+            The first release candidate for the upcoming 1.6.0 release, containing new features, improvements and bug fixes.
+          ]]>
+        </description>
+        <pubDate>Tue, 30 Mar 2021 07:10:00 -0500</pubDate>
+        <link>https://octoprint.org/blog/2021/03/30/new-release-candidate-1.6.0rc1/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/03/30/new-release-candidate-1.6.0rc1/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release: 1.5.3</title>
+        <description>
+          <![CDATA[
+            This is a bugfix release to fix two bugs in OctoPrint 1.5.x.
+          ]]>
+        </description>
+        <pubDate>Tue, 19 Jan 2021 04:30:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2021/01/19/new-release-1.5.3/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2021/01/19/new-release-1.5.3/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+      <item>
+        <title>New release: 1.5.2</title>
+        <description>
+          <![CDATA[
+            This is a hotfix release to fix one bug and add a workaround for a third party dependency issue.
+          ]]>
+        </description>
+        <pubDate>Thu, 10 Dec 2020 06:40:00 -0600</pubDate>
+        <link>https://octoprint.org/blog/2020/12/10/new-release-1.5.2/?utm_source=rss&amp;utm_medium=releases</link>
+        <guid isPermaLink="true">https://octoprint.org/blog/2020/12/10/new-release-1.5.2/</guid>
+        <category>OctoPrint Release Announcements</category>
+      </item>
+    
+  </channel>
+</rss>

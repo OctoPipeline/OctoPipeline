@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>OctoPrint Plugin Repository</title>
+    <description>The official OctoPrint Plugin Repository</description>
+    <link>https://plugins.octoprint.org/</link>
+    <atom:link href="https://plugins.octoprint.org/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Fri, 24 Sep 2021 09:15:18 -0500</pubDate>
+    <lastBuildDate>Fri, 24 Sep 2021 09:15:18 -0500</lastBuildDate>
+    <generator>Jekyll v3.9.0</generator>
+    
+    
+      <item>
+        <title>Fractal Bridge</title>
+        <description>
+          <![CDATA[
+            Fractal's printer control plugin for OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/fractalbridge/fractal-home.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Wed, 15 Sep 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/fractalbridge/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/fractalbridge/</guid>
+        
+        <category>cloud printing</category>
+        
+        <category>remote printing</category>
+        
+        <category>remote access</category>
+        
+        <category>video streaming</category>
+        
+        <category>automated printing</category>
+        
+        <category>smart queuing</category>
+        
+        <category>fleet management</category>
+        
+      </item>
+    
+      <item>
+        <title>Thingiverse Downloader</title>
+        <description>
+          <![CDATA[
+            Download and extract a thing from Thingiverse to your Octoprint instance
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/thingiverse_downloader/demo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Fri, 10 Sep 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/thingiverse_downloader/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/thingiverse_downloader/</guid>
+        
+        <category>thingiverse</category>
+        
+        <category>3d models</category>
+        
+      </item>
+    
+      <item>
+        <title>Safety Printer</title>
+        <description>
+          <![CDATA[
+            This plugin interfaces with Safety Printer MCU to improve your printer's safety.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/SafetyPrinter/icon.PNG"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 30 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/SafetyPrinter/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/SafetyPrinter/</guid>
+        
+        <category>fire</category>
+        
+        <category>smoke</category>
+        
+        <category>notification</category>
+        
+        <category>bed temperature</category>
+        
+        <category>hotend temperature</category>
+        
+        <category>safety</category>
+        
+        <category>flame detector</category>
+        
+        <category>emergency</category>
+        
+        <category>shutdown</category>
+        
+        <category>trip</category>
+        
+      </item>
+    
+      <item>
+        <title>UPS</title>
+        <description>
+          <![CDATA[
+            Integrates a UPS monitored by NUT into OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/ups/ups_navbar.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 22 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/ups/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/ups/</guid>
+        
+        <category>ups</category>
+        
+        <category>battery</category>
+        
+        <category>nut</category>
+        
+      </item>
+    
+      <item>
+        <title>Print Scheduler</title>
+        <description>
+          <![CDATA[
+            Plugin that allows to schedule prints to run at a specified time.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/printscheduler/screenshot_tab.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 21 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/printscheduler/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/printscheduler/</guid>
+        
+        <category>scheduler</category>
+        
+        <category>cron</category>
+        
+        <category>schedule</category>
+        
+        <category>queue</category>
+        
+        <category>CR-30</category>
+        
+        <category>belt printers</category>
+        
+      </item>
+    
+      <item>
+        <title>OctoPrint-PlotlyTempGraph</title>
+        <description>
+          <![CDATA[
+            Display temperature data in a plotly js graph.
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/plotlytempgraph/screenshot.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sat, 21 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/plotlytempgraph/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/plotlytempgraph/</guid>
+        
+        <category>temperature</category>
+        
+        <category>graph</category>
+        
+        <category>UI</category>
+        
+        <category>plotly</category>
+        
+      </item>
+    
+      <item>
+        <title>Octoprint-Chituboard</title>
+        <description>
+          <![CDATA[
+            compatibility layer for SLA printers with Chituboards like the Photon and Mars series
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/Chituboard/octoprint_chituboard.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 16 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/Chituboard/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/Chituboard/</guid>
+        
+        <category>anycubic</category>
+        
+        <category>elegoo</category>
+        
+        <category>chituboard</category>
+        
+        <category>printer</category>
+        
+        <category>resin printer</category>
+        
+        <category>broken firmware</category>
+        
+        <category>workaround</category>
+        
+      </item>
+    
+      <item>
+        <title>AutoBim</title>
+        <description>
+          <![CDATA[
+            A bed tramming utility for OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/autobim/ui_1.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 15 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/autobim/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/autobim/</guid>
+        
+        <category>abl</category>
+        
+        <category>bed level</category>
+        
+        <category>bed levelling</category>
+        
+        <category>auto bed leveling</category>
+        
+        <category>bl-touch</category>
+        
+        <category>maintenance</category>
+        
+      </item>
+    
+      <item>
+        <title>Gcode Macros</title>
+        <description>
+          <![CDATA[
+            Configure custom gcode macros you can use anywhere!
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/gcode_macro/settings.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Mon, 09 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/gcode_macro/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/gcode_macro/</guid>
+        
+        <category>gcode</category>
+        
+        <category>macro</category>
+        
+        <category>scripts</category>
+        
+        <category>custom</category>
+        
+        <category>productivity</category>
+        
+      </item>
+    
+      <item>
+        <title>Physical Button</title>
+        <description>
+          <![CDATA[
+            Add physical buttons to OctoPrint
+            <p><img src="https://plugins.octoprint.org/assets/img/plugins/physicalbutton/PhysicalButton_Logo.png"></p>
+          ]]>
+        </description>
+        <pubDate>
+Sun, 01 Aug 2021 00:00:00 -0500</pubDate>
+        <link>https://plugins.octoprint.org/plugins/physicalbutton/?utm_source=rss&amp;utm_medium=feed</link>
+        <guid isPermaLink="true">https://plugins.octoprint.org/plugins/physicalbutton/</guid>
+        
+        <category>physical</category>
+        
+        <category>button</category>
+        
+        <category>buttons</category>
+        
+        <category>input</category>
+        
+        <category>gpio</category>
+        
+        <category>pins</category>
+        
+        <category>external</category>
+        
+        <category>send</category>
+        
+        <category>action</category>
+        
+        <category>actions</category>
+        
+        <category>file</category>
+        
+        <category>gcode</category>
+        
+        <category>system</category>
+        
+      </item>
+    
+  </channel>
+</rss>

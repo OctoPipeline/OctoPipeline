@@ -1,0 +1,109 @@
+__version: 1.6.1
+file_check:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 1fd5482b4fa54235531810fa4bf95620
+  information:
+    local:
+      name: 2021.2.23
+      value: 2021.2.23
+    needs_online: true
+    remote:
+      name: 2021.2.23
+      release_notes: https://github.com/OctoPrint/OctoPrint-FileCheck/releases/tag/2021.2.23
+      value: 2021.2.23
+  online: true
+  possible: true
+  timestamp: 1634319253.851657
+firmware_check:
+  available: true
+  compatible: true
+  disabled: false
+  error: null
+  hash: 622459257bd1eaff83fb15d1869ec695
+  information:
+    local:
+      name: 2021.5.31
+      value: 2021.5.31
+    needs_online: true
+    remote:
+      name: 2021.10.11
+      release_notes: https://github.com/OctoPrint/OctoPrint-FirmwareCheck/releases/tag/2021.10.11
+      value: 2021.10.11
+  online: true
+  possible: true
+  timestamp: 1634319253.8541746
+mqtt:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 72535221e6672b51277399d27c1735e6
+  information:
+    local:
+      name: 0.8.10
+      value: 0.8.10
+    needs_online: true
+    remote:
+      name: 0.8.10
+      release_notes: https://github.com/OctoPrint/OctoPrint-MQTT/releases/tag/0.8.10
+      value: 0.8.10
+  online: true
+  possible: true
+  timestamp: 1634319253.8585236
+mqttsubscribe:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: 472bb6d35f732e9b6ac56477203dbc23
+  information:
+    local:
+      name: 0.1.6
+      value: 0.1.6
+    needs_online: true
+    remote:
+      name: 0.1.6
+      release_notes: https://github.com/jneilliii/OctoPrint-MQTTSubscribe/releases/tag/0.1.6
+      value: 0.1.6
+  online: true
+  possible: true
+  timestamp: 1634319253.857933
+octoprint:
+  available: true
+  compatible: true
+  disabled: false
+  error: null
+  hash: be11972c2890e020f8fd6f6c636611c4
+  information:
+    local:
+      name: 1.6.1
+      value: 1.6.1
+    needs_online: true
+    remote:
+      name: 1.7.0
+      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.7.0
+      value: 1.7.0
+  online: true
+  possible: true
+  timestamp: 1634319253.8557124
+virtual_printerconfig:
+  available: false
+  compatible: true
+  disabled: false
+  error: null
+  hash: c143d9242f4836e29120ae441063d950
+  information:
+    local:
+      name: 1.5.1
+      value: 1.5.1
+    needs_online: true
+    remote:
+      name: 1.5.1 (Stable Release)
+      release_notes: https://github.com/cp2004/OctoPrint-VirtualPrinterSettings/releases/tag/1.5.1
+      value: 1.5.1
+  online: true
+  possible: true
+  timestamp: 1634319254.159582

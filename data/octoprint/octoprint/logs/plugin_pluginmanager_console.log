@@ -1,0 +1,456 @@
+2021-09-24 15:06:02,845   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmp1mlc56b9/OctoPrint-MQTT-master.zip --no-cache-dir
+2021-09-24 15:06:04,800 > Processing /tmp/tmp1mlc56b9/OctoPrint-MQTT-master.zip
+2021-09-24 15:06:04,801 > Requirement already satisfied: OctoPrint>=1.3.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint-MQTT==0.8.10) (1.6.1)
+2021-09-24 15:06:04,801 > Collecting paho-mqtt
+2021-09-24 15:06:04,801 > Downloading paho-mqtt-1.5.1.tar.gz (101 kB)
+2021-09-24 15:06:04,802 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.4.21)
+2021-09-24 15:06:04,802 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.5.31)
+2021-09-24 15:06:04,802 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.18.2)
+2021-09-24 15:06:04,802 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.20.3)
+2021-09-24 15:06:04,803 > Requirement already satisfied: netifaces<1,>=0.10.9 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.11.0)
+2021-09-24 15:06:04,803 > Requirement already satisfied: tornado==5.1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (5.1.1)
+2021-09-24 15:06:04,803 > Requirement already satisfied: cachelib<1,>=0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.1.1)
+2021-09-24 15:06:04,803 > Requirement already satisfied: regex!=2018.11.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.4.4)
+2021-09-24 15:06:04,803 > Requirement already satisfied: psutil<6,>=5.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (5.8.0)
+2021-09-24 15:06:04,804 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.4)
+2021-09-24 15:06:04,804 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.0.7)
+2021-09-24 15:06:04,804 > Requirement already satisfied: feedparser<7,>=6.0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (6.0.2)
+2021-09-24 15:06:04,804 > Requirement already satisfied: requests<3,>=2.23.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.25.1)
+2021-09-24 15:06:04,804 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.1.1)
+2021-09-24 15:06:04,804 > Requirement already satisfied: websocket-client<1,>=0.57 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.59.0)
+2021-09-24 15:06:04,804 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (5.4.1)
+2021-09-24 15:06:04,805 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.11.3)
+2021-09-24 15:06:04,805 > Requirement already satisfied: watchdog==0.10.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.10.4)
+2021-09-24 15:06:04,805 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.2.23)
+2021-09-24 15:06:04,805 > Requirement already satisfied: Click<8,>=7.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (7.1.2)
+2021-09-24 15:06:04,805 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.24.5)
+2021-09-24 15:06:04,805 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.3.0)
+2021-09-24 15:06:04,806 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.0)
+2021-09-24 15:06:04,806 > Requirement already satisfied: markdown<3.2,>=3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (3.1.1)
+2021-09-24 15:06:04,806 > Requirement already satisfied: sarge==0.1.5post0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.1.5.post0)
+2021-09-24 15:06:04,806 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.8.5)
+2021-09-24 15:06:04,806 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.1.8)
+2021-09-24 15:06:04,806 > Requirement already satisfied: emoji<1,>=0.5.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.6.0)
+2021-09-24 15:06:04,807 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.2.0)
+2021-09-24 15:06:04,807 > Requirement already satisfied: netaddr<1,>=0.7.19 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.8.0)
+2021-09-24 15:06:04,807 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.0.0)
+2021-09-24 15:06:04,807 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.7.0)
+2021-09-24 15:06:04,807 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (3.5)
+2021-09-24 15:06:04,808 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.5.0)
+2021-09-24 15:06:04,808 > Requirement already satisfied: wrapt<2,>=1.12.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.12.1)
+2021-09-24 15:06:04,808 > Requirement already satisfied: flask<2,>=1.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.1.4)
+2021-09-24 15:06:04,808 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.0.1)
+2021-09-24 15:06:04,808 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.1.0)
+2021-09-24 15:06:04,808 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /usr/local/lib/python3.8/site-packages (from OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.3.26.post2)
+2021-09-24 15:06:04,809 > Requirement already satisfied: pathtools>=0.1.1 in /usr/local/lib/python3.8/site-packages (from watchdog==0.10.4->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.1.2)
+2021-09-24 15:06:04,809 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.2->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.0.0)
+2021-09-24 15:06:04,809 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.0)
+2021-09-24 15:06:04,809 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.1)
+2021-09-24 15:06:04,809 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.9.1)
+2021-09-24 15:06:04,809 > Requirement already satisfied: setuptools>=36 in /usr/local/lib/python3.8/site-packages (from markdown<3.2,>=3.1->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (57.0.0)
+2021-09-24 15:06:04,809 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2021.5.30)
+2021-09-24 15:06:04,809 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.26.5)
+2021-09-24 15:06:04,810 > Requirement already satisfied: chardet<5,>=3.0.2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (4.0.0)
+2021-09-24 15:06:04,810 > Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (2.10)
+2021-09-24 15:06:04,810 > Requirement already satisfied: six in /usr/local/lib/python3.8/site-packages (from websocket-client<1,>=0.57->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (1.16.0)
+2021-09-24 15:06:04,810 > Requirement already satisfied: ifaddr in /usr/local/lib/python3.8/site-packages (from zeroconf<0.25,>=0.24->OctoPrint>=1.3.5->OctoPrint-MQTT==0.8.10) (0.1.7)
+2021-09-24 15:06:04,810 > Building wheels for collected packages: OctoPrint-MQTT, paho-mqtt
+2021-09-24 15:06:04,810 > Building wheel for OctoPrint-MQTT (setup.py): started
+2021-09-24 15:06:04,811 > Building wheel for OctoPrint-MQTT (setup.py): finished with status 'done'
+2021-09-24 15:06:04,811 > Created wheel for OctoPrint-MQTT: filename=OctoPrint_MQTT-0.8.10-py3-none-any.whl size=22399 sha256=d031f35e8e311bb5b8b385cacc67250fd58160e61d19aa079274700b1d644a52
+2021-09-24 15:06:04,811 > Stored in directory: /tmp/pip-ephem-wheel-cache-sm66h4wj/wheels/bf/81/27/5e7973c56eb503d6c8a17c609392531ad2128dfe3940131e2c
+2021-09-24 15:06:04,811 > Building wheel for paho-mqtt (setup.py): started
+2021-09-24 15:06:04,811 > Building wheel for paho-mqtt (setup.py): finished with status 'done'
+2021-09-24 15:06:04,811 > Created wheel for paho-mqtt: filename=paho_mqtt-1.5.1-py3-none-any.whl size=61566 sha256=2e19a043d320c17a1f8498f88b1a45e6fe0171b70136a3734a313e35c1e35215
+2021-09-24 15:06:04,812 > Stored in directory: /tmp/pip-ephem-wheel-cache-sm66h4wj/wheels/78/ec/85/b657c03288b6e363c90369c96ee04eea9abb9be78cadb7855b
+2021-09-24 15:06:04,812 > Successfully built OctoPrint-MQTT paho-mqtt
+2021-09-24 15:06:04,812 > Installing collected packages: paho-mqtt, OctoPrint-MQTT
+2021-09-24 15:06:05,530 ! WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
+2021-09-24 15:06:05,530 > Successfully installed OctoPrint-MQTT-0.8.10 paho-mqtt-1.5.1
+2021-09-24 15:06:19,269   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmptxz4m6ck/release.zip --no-cache-dir
+2021-09-24 15:06:21,311 > Processing /tmp/tmptxz4m6ck/release.zip
+2021-09-24 15:06:21,311 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from Virtual-Printer-Settings==1.5.1) (1.6.1)
+2021-09-24 15:06:21,312 > Requirement already satisfied: Click<8,>=7.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (7.1.2)
+2021-09-24 15:06:21,312 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.1.1)
+2021-09-24 15:06:21,312 > Requirement already satisfied: tornado==5.1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (5.1.1)
+2021-09-24 15:06:21,313 > Requirement already satisfied: watchdog==0.10.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.10.4)
+2021-09-24 15:06:21,313 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.3.0)
+2021-09-24 15:06:21,313 > Requirement already satisfied: requests<3,>=2.23.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2.25.1)
+2021-09-24 15:06:21,313 > Requirement already satisfied: flask<2,>=1.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.1.4)
+2021-09-24 15:06:21,313 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.0.7)
+2021-09-24 15:06:21,314 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.0.1)
+2021-09-24 15:06:21,314 > Requirement already satisfied: emoji<1,>=0.5.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.6.0)
+2021-09-24 15:06:21,314 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.7.0)
+2021-09-24 15:06:21,314 > Requirement already satisfied: psutil<6,>=5.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (5.8.0)
+2021-09-24 15:06:21,314 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.4)
+2021-09-24 15:06:21,314 > Requirement already satisfied: feedparser<7,>=6.0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (6.0.2)
+2021-09-24 15:06:21,314 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2.0)
+2021-09-24 15:06:21,315 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2.11.3)
+2021-09-24 15:06:21,315 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.4.21)
+2021-09-24 15:06:21,315 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.1.8)
+2021-09-24 15:06:21,315 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.0.0)
+2021-09-24 15:06:21,315 > Requirement already satisfied: cachelib<1,>=0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.1.1)
+2021-09-24 15:06:21,315 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.24.5)
+2021-09-24 15:06:21,315 > Requirement already satisfied: websocket-client<1,>=0.57 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.59.0)
+2021-09-24 15:06:21,316 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (3.5)
+2021-09-24 15:06:21,316 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.20.3)
+2021-09-24 15:06:21,316 > Requirement already satisfied: netaddr<1,>=0.7.19 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.8.0)
+2021-09-24 15:06:21,316 > Requirement already satisfied: markdown<3.2,>=3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (3.1.1)
+2021-09-24 15:06:21,316 > Requirement already satisfied: netifaces<1,>=0.10.9 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.11.0)
+2021-09-24 15:06:21,316 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.2.0)
+2021-09-24 15:06:21,317 > Requirement already satisfied: wrapt<2,>=1.12.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.12.1)
+2021-09-24 15:06:21,317 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.5.31)
+2021-09-24 15:06:21,317 > Requirement already satisfied: sarge==0.1.5post0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.1.5.post0)
+2021-09-24 15:06:21,317 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (1.1.0)
+2021-09-24 15:06:21,317 > Requirement already satisfied: regex!=2018.11.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.4.4)
+2021-09-24 15:06:21,317 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.2.23)
+2021-09-24 15:06:21,318 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.18.2)
+2021-09-24 15:06:21,318 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (0.5.0)
+2021-09-24 15:06:21,318 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (5.4.1)
+2021-09-24 15:06:21,318 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.3.26.post2)
+2021-09-24 15:06:21,318 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Virtual-Printer-Settings==1.5.1) (2.8.5)
+2021-09-24 15:06:21,318 > Requirement already satisfied: pathtools>=0.1.1 in /usr/local/lib/python3.8/site-packages (from watchdog==0.10.4->OctoPrint->Virtual-Printer-Settings==1.5.1) (0.1.2)
+2021-09-24 15:06:21,318 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.2->OctoPrint->Virtual-Printer-Settings==1.5.1) (1.0.0)
+2021-09-24 15:06:21,319 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (2.0)
+2021-09-24 15:06:21,319 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (2.9.1)
+2021-09-24 15:06:21,319 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.1)
+2021-09-24 15:06:21,319 > Requirement already satisfied: setuptools>=36 in /usr/local/lib/python3.8/site-packages (from markdown<3.2,>=3.1->OctoPrint->Virtual-Printer-Settings==1.5.1) (57.0.0)
+2021-09-24 15:06:21,319 > Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (2.10)
+2021-09-24 15:06:21,319 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (1.26.5)
+2021-09-24 15:06:21,320 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (2021.5.30)
+2021-09-24 15:06:21,320 > Requirement already satisfied: chardet<5,>=3.0.2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Virtual-Printer-Settings==1.5.1) (4.0.0)
+2021-09-24 15:06:21,320 > Requirement already satisfied: six in /usr/local/lib/python3.8/site-packages (from websocket-client<1,>=0.57->OctoPrint->Virtual-Printer-Settings==1.5.1) (1.16.0)
+2021-09-24 15:06:21,320 > Requirement already satisfied: ifaddr in /usr/local/lib/python3.8/site-packages (from zeroconf<0.25,>=0.24->OctoPrint->Virtual-Printer-Settings==1.5.1) (0.1.7)
+2021-09-24 15:06:21,320 > Building wheels for collected packages: Virtual-Printer-Settings
+2021-09-24 15:06:21,320 > Building wheel for Virtual-Printer-Settings (setup.py): started
+2021-09-24 15:06:21,320 > Building wheel for Virtual-Printer-Settings (setup.py): finished with status 'done'
+2021-09-24 15:06:21,321 > Created wheel for Virtual-Printer-Settings: filename=Virtual_Printer_Settings-1.5.1-py3-none-any.whl size=10575 sha256=ee6eecc995e21f511db295eea6ffebd1a8886dcffdb95a3f39087b1957ff2cb3
+2021-09-24 15:06:21,321 > Stored in directory: /tmp/pip-ephem-wheel-cache-nccwhhe9/wheels/27/d5/3e/16f649f183b63d343971030030d2e64cf44522cf836421b67c
+2021-09-24 15:06:21,321 > Successfully built Virtual-Printer-Settings
+2021-09-24 15:06:21,321 > Installing collected packages: Virtual-Printer-Settings
+2021-09-24 15:06:21,321 > Successfully installed Virtual-Printer-Settings-1.5.1
+2021-09-24 15:06:21,322 ! WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
+2021-09-24 15:17:13,804   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmpr6mr6kzr/OctoPrint-LDAP-master.zip --no-cache-dir
+2021-09-24 15:17:17,338 > Processing /tmp/tmpr6mr6kzr/OctoPrint-LDAP-master.zip
+2021-09-24 15:17:17,338 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from Auth-LDAP==1.1.0) (1.6.1)
+2021-09-24 15:17:17,339 > Collecting python-ldap
+2021-09-24 15:17:17,339 > Downloading python-ldap-3.3.1.tar.gz (379 kB)
+2021-09-24 15:17:17,339 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2021.2.23)
+2021-09-24 15:17:17,339 > Requirement already satisfied: emoji<1,>=0.5.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.6.0)
+2021-09-24 15:17:17,340 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (5.4.1)
+2021-09-24 15:17:17,340 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.0.0)
+2021-09-24 15:17:17,340 > Requirement already satisfied: feedparser<7,>=6.0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (6.0.2)
+2021-09-24 15:17:17,340 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (3.5)
+2021-09-24 15:17:17,341 > Requirement already satisfied: tornado==5.1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (5.1.1)
+2021-09-24 15:17:17,341 > Requirement already satisfied: regex!=2018.11.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2021.4.4)
+2021-09-24 15:17:17,341 > Requirement already satisfied: netaddr<1,>=0.7.19 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.8.0)
+2021-09-24 15:17:17,341 > Requirement already satisfied: cachelib<1,>=0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.1.1)
+2021-09-24 15:17:17,342 > Requirement already satisfied: watchdog==0.10.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.10.4)
+2021-09-24 15:17:17,342 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.0.1)
+2021-09-24 15:17:17,342 > Requirement already satisfied: psutil<6,>=5.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (5.8.0)
+2021-09-24 15:17:17,342 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.24.5)
+2021-09-24 15:17:17,342 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.2.0)
+2021-09-24 15:17:17,343 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.1.0)
+2021-09-24 15:17:17,343 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2021.3.26.post2)
+2021-09-24 15:17:17,343 > Requirement already satisfied: markdown<3.2,>=3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (3.1.1)
+2021-09-24 15:17:17,343 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.0.7)
+2021-09-24 15:17:17,344 > Requirement already satisfied: flask<2,>=1.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.1.4)
+2021-09-24 15:17:17,344 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2.11.3)
+2021-09-24 15:17:17,344 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.5.0)
+2021-09-24 15:17:17,344 > Requirement already satisfied: wrapt<2,>=1.12.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.12.1)
+2021-09-24 15:17:17,345 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.4.21)
+2021-09-24 15:17:17,345 > Requirement already satisfied: netifaces<1,>=0.10.9 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.11.0)
+2021-09-24 15:17:17,345 > Requirement already satisfied: websocket-client<1,>=0.57 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.59.0)
+2021-09-24 15:17:17,345 > Requirement already satisfied: Click<8,>=7.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (7.1.2)
+2021-09-24 15:17:17,346 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.1.1)
+2021-09-24 15:17:17,346 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2021.5.31)
+2021-09-24 15:17:17,346 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2.0)
+2021-09-24 15:17:17,346 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.3.0)
+2021-09-24 15:17:17,346 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.7.0)
+2021-09-24 15:17:17,347 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.20.3)
+2021-09-24 15:17:17,347 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.1.8)
+2021-09-24 15:17:17,347 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (1.4)
+2021-09-24 15:17:17,348 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.18.2)
+2021-09-24 15:17:17,348 > Requirement already satisfied: sarge==0.1.5post0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (0.1.5.post0)
+2021-09-24 15:17:17,348 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2.8.5)
+2021-09-24 15:17:17,348 > Requirement already satisfied: requests<3,>=2.23.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->Auth-LDAP==1.1.0) (2.25.1)
+2021-09-24 15:17:17,349 > Requirement already satisfied: pathtools>=0.1.1 in /usr/local/lib/python3.8/site-packages (from watchdog==0.10.4->OctoPrint->Auth-LDAP==1.1.0) (0.1.2)
+2021-09-24 15:17:17,349 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.2->OctoPrint->Auth-LDAP==1.1.0) (1.0.0)
+2021-09-24 15:17:17,349 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->Auth-LDAP==1.1.0) (2.0)
+2021-09-24 15:17:17,349 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Auth-LDAP==1.1.0) (2.9.1)
+2021-09-24 15:17:17,350 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->Auth-LDAP==1.1.0) (2021.1)
+2021-09-24 15:17:17,350 > Requirement already satisfied: setuptools>=36 in /usr/local/lib/python3.8/site-packages (from markdown<3.2,>=3.1->OctoPrint->Auth-LDAP==1.1.0) (57.0.0)
+2021-09-24 15:17:17,350 > Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Auth-LDAP==1.1.0) (2.10)
+2021-09-24 15:17:17,350 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Auth-LDAP==1.1.0) (1.26.5)
+2021-09-24 15:17:17,350 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Auth-LDAP==1.1.0) (2021.5.30)
+2021-09-24 15:17:17,351 > Requirement already satisfied: chardet<5,>=3.0.2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->Auth-LDAP==1.1.0) (4.0.0)
+2021-09-24 15:17:17,351 > Requirement already satisfied: six in /usr/local/lib/python3.8/site-packages (from websocket-client<1,>=0.57->OctoPrint->Auth-LDAP==1.1.0) (1.16.0)
+2021-09-24 15:17:17,351 > Requirement already satisfied: ifaddr in /usr/local/lib/python3.8/site-packages (from zeroconf<0.25,>=0.24->OctoPrint->Auth-LDAP==1.1.0) (0.1.7)
+2021-09-24 15:17:17,351 > Collecting pyasn1>=0.3.7
+2021-09-24 15:17:17,351 > Downloading pyasn1-0.4.8-py2.py3-none-any.whl (77 kB)
+2021-09-24 15:17:17,351 > Collecting pyasn1_modules>=0.1.5
+2021-09-24 15:17:17,352 > Downloading pyasn1_modules-0.2.8-py2.py3-none-any.whl (155 kB)
+2021-09-24 15:17:17,352 > Building wheels for collected packages: Auth-LDAP, python-ldap
+2021-09-24 15:17:17,352 > Building wheel for Auth-LDAP (setup.py): started
+2021-09-24 15:17:17,352 > Building wheel for Auth-LDAP (setup.py): finished with status 'done'
+2021-09-24 15:17:17,352 > Created wheel for Auth-LDAP: filename=Auth_LDAP-1.1.0-py3-none-any.whl size=27230 sha256=b4fdd58fcb28e2f3faed68c37c99641ff65f99ed257683ab8cd0da3fd15a222e
+2021-09-24 15:17:17,352 > Stored in directory: /tmp/pip-ephem-wheel-cache-mk876xtz/wheels/f8/a9/99/2ac50f4d70d5bac8064ea4bd16075801b594ea88e680e698c8
+2021-09-24 15:17:17,353 > Building wheel for python-ldap (setup.py): started
+2021-09-24 15:17:17,353 > Building wheel for python-ldap (setup.py): finished with status 'error'
+2021-09-24 15:17:17,353 > Running setup.py clean for python-ldap
+2021-09-24 15:17:17,353 > Successfully built Auth-LDAP
+2021-09-24 15:17:17,353 > Failed to build python-ldap
+2021-09-24 15:17:17,353 > Installing collected packages: pyasn1, pyasn1-modules, python-ldap, Auth-LDAP
+2021-09-24 15:17:17,855 ! ERROR: Command errored out with exit status 1:
+2021-09-24 15:17:17,855 ! command: /usr/local/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"'; __file__='"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' bdist_wheel -d /tmp/pip-wheel-rv0qe97t
+2021-09-24 15:17:17,855 ! cwd: /tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/
+2021-09-24 15:17:17,855 ! Complete output (83 lines):
+2021-09-24 15:17:17,856 ! running bdist_wheel
+2021-09-24 15:17:17,856 ! running build
+2021-09-24 15:17:17,856 ! running build_py
+2021-09-24 15:17:17,856 ! creating build
+2021-09-24 15:17:17,857 ! creating build/lib.linux-x86_64-3.8
+2021-09-24 15:17:17,857 ! copying Lib/ldapurl.py -> build/lib.linux-x86_64-3.8
+2021-09-24 15:17:17,857 ! copying Lib/ldif.py -> build/lib.linux-x86_64-3.8
+2021-09-24 15:17:17,857 ! creating build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,857 ! copying Lib/ldap/asyncsearch.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/dn.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/async.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/logger.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/resiter.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/ldapobject.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/sasl.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,858 ! copying Lib/ldap/constants.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/cidict.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/filter.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/modlist.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/functions.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/__init__.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,859 ! copying Lib/ldap/syncrepl.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,860 ! copying Lib/ldap/compat.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,860 ! copying Lib/ldap/pkginfo.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:17,860 ! creating build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,860 ! copying Lib/ldap/controls/vlv.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,860 ! copying Lib/ldap/controls/sss.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,860 ! copying Lib/ldap/controls/libldap.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,860 ! copying Lib/ldap/controls/ppolicy.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,861 ! copying Lib/ldap/controls/psearch.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,861 ! copying Lib/ldap/controls/pagedresults.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,861 ! copying Lib/ldap/controls/openldap.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,861 ! copying Lib/ldap/controls/deref.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,861 ! copying Lib/ldap/controls/readentry.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,862 ! copying Lib/ldap/controls/pwdpolicy.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,862 ! copying Lib/ldap/controls/__init__.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,862 ! copying Lib/ldap/controls/sessiontrack.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,862 ! copying Lib/ldap/controls/simple.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:17,862 ! creating build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:17,862 ! copying Lib/ldap/extop/passwd.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:17,863 ! copying Lib/ldap/extop/dds.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:17,863 ! copying Lib/ldap/extop/__init__.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:17,863 ! creating build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:17,863 ! copying Lib/ldap/schema/models.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:17,863 ! copying Lib/ldap/schema/subentry.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:17,863 ! copying Lib/ldap/schema/tokenizer.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:17,864 ! copying Lib/ldap/schema/__init__.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:17,864 ! creating build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:17,864 ! copying Lib/slapdtest/__init__.py -> build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:17,864 ! copying Lib/slapdtest/_slapdtest.py -> build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:17,864 ! running egg_info
+2021-09-24 15:17:17,864 ! writing Lib/python_ldap.egg-info/PKG-INFO
+2021-09-24 15:17:17,865 ! writing dependency_links to Lib/python_ldap.egg-info/dependency_links.txt
+2021-09-24 15:17:17,865 ! writing requirements to Lib/python_ldap.egg-info/requires.txt
+2021-09-24 15:17:17,865 ! writing top-level names to Lib/python_ldap.egg-info/top_level.txt
+2021-09-24 15:17:17,865 ! reading manifest file 'Lib/python_ldap.egg-info/SOURCES.txt'
+2021-09-24 15:17:17,865 ! reading manifest template 'MANIFEST.in'
+2021-09-24 15:17:17,865 ! no previously-included directories found matching 'Doc/.build'
+2021-09-24 15:17:17,866 ! adding license file 'LICENCE'
+2021-09-24 15:17:17,866 ! writing manifest file 'Lib/python_ldap.egg-info/SOURCES.txt'
+2021-09-24 15:17:17,866 ! creating build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,866 ! copying Lib/slapdtest/certs/README -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,866 ! copying Lib/slapdtest/certs/ca.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,866 ! copying Lib/slapdtest/certs/ca.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,866 ! copying Lib/slapdtest/certs/client.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/client.key -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/client.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/gencerts.sh -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/gennssdb.sh -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/server.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,867 ! copying Lib/slapdtest/certs/server.key -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,868 ! copying Lib/slapdtest/certs/server.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:17,868 ! running build_ext
+2021-09-24 15:17:17,868 ! building '_ldap' extension
+2021-09-24 15:17:17,868 ! creating build/temp.linux-x86_64-3.8
+2021-09-24 15:17:17,868 ! creating build/temp.linux-x86_64-3.8/Modules
+2021-09-24 15:17:17,868 ! gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -DHAVE_SASL -DHAVE_TLS -DHAVE_LIBLDAP_R -DHAVE_LIBLDAP_R -DLDAPMODULE_VERSION=3.3.1 -DLDAPMODULE_AUTHOR=python-ldap project -DLDAPMODULE_LICENSE=Python style -IModules -I/usr/local/include/python3.8 -c Modules/LDAPObject.c -o build/temp.linux-x86_64-3.8/Modules/LDAPObject.o
+2021-09-24 15:17:17,869 ! In file included from Modules/LDAPObject.c:3:
+2021-09-24 15:17:17,869 ! Modules/common.h:15:10: fatal error: lber.h: No such file or directory
+2021-09-24 15:17:17,869 ! #include <lber.h>
+2021-09-24 15:17:17,869 ! ^~~~~~~~
+2021-09-24 15:17:17,869 ! compilation terminated.
+2021-09-24 15:17:17,869 ! error: command 'gcc' failed with exit status 1
+2021-09-24 15:17:17,870 ! ----------------------------------------
+2021-09-24 15:17:17,870 ! ERROR: Failed building wheel for python-ldap
+2021-09-24 15:17:23,674 > Running setup.py install for python-ldap: started
+2021-09-24 15:17:23,674 > Running setup.py install for python-ldap: finished with status 'error'
+2021-09-24 15:17:23,675 ! ERROR: Command errored out with exit status 1:
+2021-09-24 15:17:23,676 ! command: /usr/local/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"'; __file__='"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-9kxojad2/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /octoprint/plugins/include/python3.8/python-ldap
+2021-09-24 15:17:23,676 ! cwd: /tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/
+2021-09-24 15:17:23,676 ! Complete output (83 lines):
+2021-09-24 15:17:23,676 ! running install
+2021-09-24 15:17:23,677 ! running build
+2021-09-24 15:17:23,677 ! running build_py
+2021-09-24 15:17:23,677 ! creating build
+2021-09-24 15:17:23,678 ! creating build/lib.linux-x86_64-3.8
+2021-09-24 15:17:23,678 ! copying Lib/ldapurl.py -> build/lib.linux-x86_64-3.8
+2021-09-24 15:17:23,678 ! copying Lib/ldif.py -> build/lib.linux-x86_64-3.8
+2021-09-24 15:17:23,678 ! creating build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,678 ! copying Lib/ldap/asyncsearch.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,678 ! copying Lib/ldap/dn.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/async.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/logger.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/resiter.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/ldapobject.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/sasl.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,679 ! copying Lib/ldap/constants.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/cidict.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/filter.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/modlist.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/functions.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/__init__.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/syncrepl.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,680 ! copying Lib/ldap/compat.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,681 ! copying Lib/ldap/pkginfo.py -> build/lib.linux-x86_64-3.8/ldap
+2021-09-24 15:17:23,681 ! creating build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,681 ! copying Lib/ldap/controls/vlv.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,681 ! copying Lib/ldap/controls/sss.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,681 ! copying Lib/ldap/controls/libldap.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,681 ! copying Lib/ldap/controls/ppolicy.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/psearch.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/pagedresults.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/openldap.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/deref.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/readentry.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,682 ! copying Lib/ldap/controls/pwdpolicy.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,683 ! copying Lib/ldap/controls/__init__.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,683 ! copying Lib/ldap/controls/sessiontrack.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,683 ! copying Lib/ldap/controls/simple.py -> build/lib.linux-x86_64-3.8/ldap/controls
+2021-09-24 15:17:23,683 ! creating build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:23,683 ! copying Lib/ldap/extop/passwd.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:23,683 ! copying Lib/ldap/extop/dds.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:23,684 ! copying Lib/ldap/extop/__init__.py -> build/lib.linux-x86_64-3.8/ldap/extop
+2021-09-24 15:17:23,684 ! creating build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:23,684 ! copying Lib/ldap/schema/models.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:23,684 ! copying Lib/ldap/schema/subentry.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:23,684 ! copying Lib/ldap/schema/tokenizer.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:23,685 ! copying Lib/ldap/schema/__init__.py -> build/lib.linux-x86_64-3.8/ldap/schema
+2021-09-24 15:17:23,685 ! creating build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:23,685 ! copying Lib/slapdtest/__init__.py -> build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:23,685 ! copying Lib/slapdtest/_slapdtest.py -> build/lib.linux-x86_64-3.8/slapdtest
+2021-09-24 15:17:23,686 ! running egg_info
+2021-09-24 15:17:23,686 ! writing Lib/python_ldap.egg-info/PKG-INFO
+2021-09-24 15:17:23,686 ! writing dependency_links to Lib/python_ldap.egg-info/dependency_links.txt
+2021-09-24 15:17:23,686 ! writing requirements to Lib/python_ldap.egg-info/requires.txt
+2021-09-24 15:17:23,686 ! writing top-level names to Lib/python_ldap.egg-info/top_level.txt
+2021-09-24 15:17:23,686 ! reading manifest file 'Lib/python_ldap.egg-info/SOURCES.txt'
+2021-09-24 15:17:23,687 ! reading manifest template 'MANIFEST.in'
+2021-09-24 15:17:23,687 ! no previously-included directories found matching 'Doc/.build'
+2021-09-24 15:17:23,687 ! adding license file 'LICENCE'
+2021-09-24 15:17:23,687 ! writing manifest file 'Lib/python_ldap.egg-info/SOURCES.txt'
+2021-09-24 15:17:23,687 ! creating build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,687 ! copying Lib/slapdtest/certs/README -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/ca.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/ca.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/client.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/client.key -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/client.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,688 ! copying Lib/slapdtest/certs/gencerts.sh -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,689 ! copying Lib/slapdtest/certs/gennssdb.sh -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,689 ! copying Lib/slapdtest/certs/server.conf -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,689 ! copying Lib/slapdtest/certs/server.key -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,689 ! copying Lib/slapdtest/certs/server.pem -> build/lib.linux-x86_64-3.8/slapdtest/certs
+2021-09-24 15:17:23,689 ! running build_ext
+2021-09-24 15:17:23,689 ! building '_ldap' extension
+2021-09-24 15:17:23,689 ! creating build/temp.linux-x86_64-3.8
+2021-09-24 15:17:23,689 ! creating build/temp.linux-x86_64-3.8/Modules
+2021-09-24 15:17:23,690 ! gcc -pthread -Wno-unused-result -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -fPIC -DHAVE_SASL -DHAVE_TLS -DHAVE_LIBLDAP_R -DHAVE_LIBLDAP_R -DLDAPMODULE_VERSION=3.3.1 -DLDAPMODULE_AUTHOR=python-ldap project -DLDAPMODULE_LICENSE=Python style -IModules -I/usr/local/include/python3.8 -c Modules/LDAPObject.c -o build/temp.linux-x86_64-3.8/Modules/LDAPObject.o
+2021-09-24 15:17:23,690 ! In file included from Modules/LDAPObject.c:3:
+2021-09-24 15:17:23,690 ! Modules/common.h:15:10: fatal error: lber.h: No such file or directory
+2021-09-24 15:17:23,690 ! #include <lber.h>
+2021-09-24 15:17:23,690 ! ^~~~~~~~
+2021-09-24 15:17:23,690 ! compilation terminated.
+2021-09-24 15:17:23,691 ! error: command 'gcc' failed with exit status 1
+2021-09-24 15:17:23,691 ! ----------------------------------------
+2021-09-24 15:17:23,691 ! ERROR: Command errored out with exit status 1: /usr/local/bin/python -u -c 'import io, os, sys, setuptools, tokenize; sys.argv[0] = '"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"'; __file__='"'"'/tmp/pip-install-g_4nfh3o/python-ldap_f5f30f065eb042118cc370955e31cec3/setup.py'"'"';f = getattr(tokenize, '"'"'open'"'"', open)(__file__) if os.path.exists(__file__) else io.StringIO('"'"'from setuptools import setup; setup()'"'"');code = f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' install --record /tmp/pip-record-9kxojad2/install-record.txt --single-version-externally-managed --user --prefix= --compile --install-headers /octoprint/plugins/include/python3.8/python-ldap Check the logs for full command output.
+2021-09-24 15:19:00,718   /usr/local/bin/python -m pip --disable-pip-version-check install file:///tmp/tmpzm6e_jj0/OctoPrint-MQTTSubscribe-master.zip --no-cache-dir
+2021-09-24 15:19:03,845 > Processing /tmp/tmpzm6e_jj0/OctoPrint-MQTTSubscribe-master.zip
+2021-09-24 15:19:03,845 > Requirement already satisfied: OctoPrint in /usr/local/lib/python3.8/site-packages (from OctoPrint-MQTTSubscribe==0.1.6) (1.6.1)
+2021-09-24 15:19:03,846 > Collecting jsonpath_rw
+2021-09-24 15:19:03,846 > Downloading jsonpath-rw-1.4.0.tar.gz (13 kB)
+2021-09-24 15:19:03,846 > Collecting ply
+2021-09-24 15:19:03,847 > Downloading ply-3.11-py2.py3-none-any.whl (49 kB)
+2021-09-24 15:19:03,847 > Collecting decorator
+2021-09-24 15:19:03,847 > Downloading decorator-5.1.0-py3-none-any.whl (9.1 kB)
+2021-09-24 15:19:03,847 > Requirement already satisfied: six in /usr/local/lib/python3.8/site-packages (from jsonpath_rw->OctoPrint-MQTTSubscribe==0.1.6) (1.16.0)
+2021-09-24 15:19:03,847 > Requirement already satisfied: zipstream-new<1.2,>=1.1.8 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.1.8)
+2021-09-24 15:19:03,848 > Requirement already satisfied: markdown<3.2,>=3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (3.1.1)
+2021-09-24 15:19:03,848 > Requirement already satisfied: emoji<1,>=0.5.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.6.0)
+2021-09-24 15:19:03,848 > Requirement already satisfied: markupsafe<2.0,>=1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.1.1)
+2021-09-24 15:19:03,848 > Requirement already satisfied: feedparser<7,>=6.0.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (6.0.2)
+2021-09-24 15:19:03,848 > Requirement already satisfied: sentry-sdk<1,>=0.15.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.20.3)
+2021-09-24 15:19:03,849 > Requirement already satisfied: flask<2,>=1.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.1.4)
+2021-09-24 15:19:03,849 > Requirement already satisfied: Flask-Assets<3,>=2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.0)
+2021-09-24 15:19:03,849 > Requirement already satisfied: PyYAML<6,>=5.3.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (5.4.1)
+2021-09-24 15:19:03,849 > Requirement already satisfied: Jinja2<3,>=2.11.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.11.3)
+2021-09-24 15:19:03,849 > Requirement already satisfied: netifaces<1,>=0.10.9 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.11.0)
+2021-09-24 15:19:03,849 > Requirement already satisfied: pylru<2,>=1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.2.0)
+2021-09-24 15:19:03,849 > Requirement already satisfied: tornado==5.1.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (5.1.1)
+2021-09-24 15:19:03,850 > Requirement already satisfied: filetype<2,>=1.0.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.0.7)
+2021-09-24 15:19:03,850 > Requirement already satisfied: psutil<6,>=5.7 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (5.8.0)
+2021-09-24 15:19:03,850 > Requirement already satisfied: immutabledict<2,>=1.2.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.3.0)
+2021-09-24 15:19:03,850 > Requirement already satisfied: OctoPrint-FirmwareCheck>=2021.2.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.5.31)
+2021-09-24 15:19:03,850 > Requirement already satisfied: werkzeug<2,>=1.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.0.1)
+2021-09-24 15:19:03,850 > Requirement already satisfied: Flask-Login<0.6,>=0.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.5.0)
+2021-09-24 15:19:03,851 > Requirement already satisfied: pkginfo<2,>=1.5.0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.7.0)
+2021-09-24 15:19:03,851 > Requirement already satisfied: future<1,>=0.18.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.18.2)
+2021-09-24 15:19:03,851 > Requirement already satisfied: zeroconf<0.25,>=0.24 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.24.5)
+2021-09-24 15:19:03,851 > Requirement already satisfied: OctoPrint-FileCheck>=2021.2.23 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.2.23)
+2021-09-24 15:19:03,852 > Requirement already satisfied: Click<8,>=7.1.2 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (7.1.2)
+2021-09-24 15:19:03,852 > Requirement already satisfied: netaddr<1,>=0.7.19 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.8.0)
+2021-09-24 15:19:03,852 > Requirement already satisfied: pyserial<4,>=3.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (3.5)
+2021-09-24 15:19:03,852 > Requirement already satisfied: sarge==0.1.5post0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.1.5.post0)
+2021-09-24 15:19:03,852 > Requirement already satisfied: itsdangerous<2,>=1.1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.1.0)
+2021-09-24 15:19:03,852 > Requirement already satisfied: semantic-version<3,>=2.8.5 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.8.5)
+2021-09-24 15:19:03,853 > Requirement already satisfied: unidecode<0.05,>=0.04.14 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.4.21)
+2021-09-24 15:19:03,853 > Requirement already satisfied: regex!=2018.11.6 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.4.4)
+2021-09-24 15:19:03,853 > Requirement already satisfied: cachelib<1,>=0.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.1.1)
+2021-09-24 15:19:03,853 > Requirement already satisfied: blinker<2,>=1.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.4)
+2021-09-24 15:19:03,853 > Requirement already satisfied: requests<3,>=2.23.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.25.1)
+2021-09-24 15:19:03,853 > Requirement already satisfied: Flask-Babel<2,>=1.0 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.0.0)
+2021-09-24 15:19:03,854 > Requirement already satisfied: watchdog==0.10.4 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.10.4)
+2021-09-24 15:19:03,854 > Requirement already satisfied: websocket-client<1,>=0.57 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.59.0)
+2021-09-24 15:19:03,854 > Requirement already satisfied: OctoPrint-PiSupport>=2021.3.26 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.3.26.post2)
+2021-09-24 15:19:03,854 > Requirement already satisfied: wrapt<2,>=1.12.1 in /usr/local/lib/python3.8/site-packages (from OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.12.1)
+2021-09-24 15:19:03,855 > Requirement already satisfied: pathtools>=0.1.1 in /usr/local/lib/python3.8/site-packages (from watchdog==0.10.4->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.1.2)
+2021-09-24 15:19:03,855 > Requirement already satisfied: sgmllib3k in /usr/local/lib/python3.8/site-packages (from feedparser<7,>=6.0.2->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.0.0)
+2021-09-24 15:19:03,855 > Requirement already satisfied: webassets>=2.0 in /usr/local/lib/python3.8/site-packages (from Flask-Assets<3,>=2.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.0)
+2021-09-24 15:19:03,855 > Requirement already satisfied: pytz in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.1)
+2021-09-24 15:19:03,855 > Requirement already satisfied: Babel>=2.3 in /usr/local/lib/python3.8/site-packages (from Flask-Babel<2,>=1.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.9.1)
+2021-09-24 15:19:03,856 > Requirement already satisfied: setuptools>=36 in /usr/local/lib/python3.8/site-packages (from markdown<3.2,>=3.1->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (57.0.0)
+2021-09-24 15:19:03,856 > Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (1.26.5)
+2021-09-24 15:19:03,856 > Requirement already satisfied: idna<3,>=2.5 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2.10)
+2021-09-24 15:19:03,856 > Requirement already satisfied: chardet<5,>=3.0.2 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (4.0.0)
+2021-09-24 15:19:03,856 > Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.8/site-packages (from requests<3,>=2.23.0->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (2021.5.30)
+2021-09-24 15:19:03,856 > Requirement already satisfied: ifaddr in /usr/local/lib/python3.8/site-packages (from zeroconf<0.25,>=0.24->OctoPrint->OctoPrint-MQTTSubscribe==0.1.6) (0.1.7)
+2021-09-24 15:19:03,857 > Building wheels for collected packages: OctoPrint-MQTTSubscribe, jsonpath-rw
+2021-09-24 15:19:03,857 > Building wheel for OctoPrint-MQTTSubscribe (setup.py): started
+2021-09-24 15:19:03,857 > Building wheel for OctoPrint-MQTTSubscribe (setup.py): finished with status 'done'
+2021-09-24 15:19:03,857 > Created wheel for OctoPrint-MQTTSubscribe: filename=OctoPrint_MQTTSubscribe-0.1.6-py3-none-any.whl size=37973 sha256=c1d967e6950a34cc4f47ef4582bb3b1b511604b776b609b43044bcb6ffd15ff8
+2021-09-24 15:19:03,857 > Stored in directory: /tmp/pip-ephem-wheel-cache-0p9kefp8/wheels/2c/43/3a/2755e765c95016f6171bd57e76aba118304674834eb4adbe59
+2021-09-24 15:19:03,857 > Building wheel for jsonpath-rw (setup.py): started
+2021-09-24 15:19:03,858 > Building wheel for jsonpath-rw (setup.py): finished with status 'done'
+2021-09-24 15:19:03,858 > Created wheel for jsonpath-rw: filename=jsonpath_rw-1.4.0-py3-none-any.whl size=15144 sha256=67f344c08113af7ba1ddcbc5f2d350468664a386a4e0e1c065e37b9c7a0ad971
+2021-09-24 15:19:03,858 > Stored in directory: /tmp/pip-ephem-wheel-cache-0p9kefp8/wheels/2b/f3/d4/2f6fb63766f0479b061d03bab249bbd44f116ae5c73b9f8a24
+2021-09-24 15:19:03,858 > Successfully built OctoPrint-MQTTSubscribe jsonpath-rw
+2021-09-24 15:19:03,858 > Installing collected packages: ply, decorator, jsonpath-rw, OctoPrint-MQTTSubscribe
+2021-09-24 15:19:04,967 > Successfully installed OctoPrint-MQTTSubscribe-0.1.6 decorator-5.1.0 jsonpath-rw-1.4.0 ply-3.11
+2021-09-24 15:19:04,968 ! WARNING: Running pip as root will break packages and permissions. You should install packages reliably by using venv: https://pip.pypa.io/warnings/venv
