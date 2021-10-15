@@ -545,3 +545,121 @@ Prefix legend: ! = disabled, # = blacklisted, * = incompatible
 2021-10-15 17:42:46,386 - octoprint.events - INFO - Processing shutdown event, this will be our last event
 2021-10-15 17:42:46,387 - octoprint.events - INFO - Event loop shut down
 2021-10-15 17:42:47,352 - octoprint.plugins.tracking - INFO - Sent tracking event shutdown, payload: {}
+2021-10-15 19:11:25,220 - octoprint.startup - INFO - ******************************************************************************
+2021-10-15 19:11:25,223 - octoprint.startup - INFO - Starting OctoPrint 1.6.1
+2021-10-15 19:11:25,224 - octoprint.startup - INFO - ******************************************************************************
+2021-10-15 19:11:27,860 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity changed from offline to online
+2021-10-15 19:11:28,097 - octoprint.util.connectivity.connectivity_checker - INFO - Connectivity state is currently: online
+2021-10-15 19:11:28,098 - octoprint.util.connectivity.connectivity_checker - INFO - Connecting to 1.1.1.1:53 is working
+2021-10-15 19:11:28,098 - octoprint.util.connectivity.connectivity_checker - INFO - Resolving octoprint.org is working
+2021-10-15 19:11:29,158 - octoprint.startup - INFO - Blacklist processing done, adding 12 blacklisted plugin versions: roomtemp (any), GcodeEditor (0.1.1), GcodeEditor (0.2.0), GcodeEditor (0.2.1), GcodeEditor (0.2.2), GcodeEditor (0.2.3), GcodeEditor (0.2.4), GcodeEditor (0.2.5), GcodeEditor (0.2.6), GcodeEditor (0.2.8), gcodeleveling (0.1.0), gcodeleveling (0.1.1)
+2021-10-15 19:11:29,171 - octoprint.plugin.core - INFO - Loading plugins from /usr/local/lib/python3.8/site-packages/octoprint/plugins, /octoprint/octoprint/plugins and installed plugin packages...
+2021-10-15 19:11:29,707 - octoprint.plugin.core - INFO - Plugin Pi Support Plugin (2021.3.26.post2) did not pass check, not loading.
+2021-10-15 19:11:29,765 - octoprint.plugin.core - INFO - Found 19 plugin(s) providing 19 mixin implementations, 35 hook handlers
+2021-10-15 19:11:29,826 - octoprint.server.heartbeat - INFO - Starting server heartbeat, 900.0s interval
+2021-10-15 19:11:29,834 - octoprint.server - INFO - Intermediary server started
+2021-10-15 19:11:29,847 - octoprint.filemanager.storage - INFO - Initializing the file metadata for /octoprint/octoprint/uploads...
+2021-10-15 19:11:29,855 - octoprint.filemanager.storage - INFO - ... file metadata for /octoprint/octoprint/uploads initialized successfully.
+2021-10-15 19:11:29,857 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_SHOW (needs: "Need(method='role', value='plugin_action_command_notification_show')")
+2021-10-15 19:11:29,857 - octoprint.server - INFO - Added new permission from plugin action_command_notification: PLUGIN_ACTION_COMMAND_NOTIFICATION_CLEAR (needs: "Need(method='role', value='plugin_action_command_notification_clear')")
+2021-10-15 19:11:29,857 - octoprint.server - INFO - Added new permission from plugin action_command_prompt: PLUGIN_ACTION_COMMAND_PROMPT_INTERACT (needs: "Need(method='role', value='plugin_action_command_prompt_interact')")
+2021-10-15 19:11:29,857 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_READ (needs: "Need(method='role', value='plugin_announcements_read')")
+2021-10-15 19:11:29,858 - octoprint.server - INFO - Added new permission from plugin announcements: PLUGIN_ANNOUNCEMENTS_MANAGE (needs: "Need(method='role', value='plugin_announcements_read'), Need(method='role', value='plugin_announcements_manage')")
+2021-10-15 19:11:29,858 - octoprint.server - INFO - Added new permission from plugin appkeys: PLUGIN_APPKEYS_ADMIN (needs: "Need(method='role', value='plugin_appkeys_admin')")
+2021-10-15 19:11:29,858 - octoprint.server - INFO - Added new permission from plugin backup: PLUGIN_BACKUP_ACCESS (needs: "Need(method='role', value='plugin_backup_access')")
+2021-10-15 19:11:29,858 - octoprint.server - INFO - Added new permission from plugin firmware_check: PLUGIN_FIRMWARE_CHECK_DISPLAY (needs: "Need(method='role', value='plugin_firmware_check_display')")
+2021-10-15 19:11:29,858 - octoprint.server - INFO - Added new permission from plugin logging: PLUGIN_LOGGING_MANAGE (needs: "Need(method='role', value='plugin_logging_manage')")
+2021-10-15 19:11:29,859 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_MANAGE (needs: "Need(method='role', value='plugin_pluginmanager_manage')")
+2021-10-15 19:11:29,859 - octoprint.server - INFO - Added new permission from plugin pluginmanager: PLUGIN_PLUGINMANAGER_INSTALL (needs: "Need(method='role', value='plugin_pluginmanager_manage'), Need(method='role', value='plugin_pluginmanager_install')")
+2021-10-15 19:11:29,859 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CHECK (needs: "Need(method='role', value='plugin_softwareupdate_check')")
+2021-10-15 19:11:29,859 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_UPDATE (needs: "Need(method='role', value='plugin_softwareupdate_update')")
+2021-10-15 19:11:29,859 - octoprint.server - INFO - Added new permission from plugin softwareupdate: PLUGIN_SOFTWAREUPDATE_CONFIGURE (needs: "Need(method='role', value='plugin_softwareupdate_configure')")
+2021-10-15 19:11:30,176 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2021-10-15 19:11:30,436 - octoprint.util.pip - INFO - Version of pip is 21.1.2
+2021-10-15 19:11:30,436 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2021-10-15 19:11:30,436 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-15 19:11:30,489 - octoprint.plugins.softwareupdate - INFO - Loaded version cache from disk
+2021-10-15 19:11:30,501 - octoprint.plugin.core - INFO - Initialized 19 plugin implementation(s)
+2021-10-15 19:11:30,505 - octoprint.plugin.core - INFO - 19 plugin(s) registered with the system:
+|  Action Command Notification Support (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/action_command_notification
+|  Action Command Prompt Support (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/action_command_prompt
+|  Announcement Plugin (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/announcements
+|  Anonymous Usage Tracking (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/tracking
+|  Application Keys Plugin (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/appkeys
+|  Backup & Restore (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/backup
+|  Core Wizard (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/corewizard
+|  Discovery (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/discovery
+|  Error Tracking (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/errortracking
+|  File Check (2021.2.23) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_file_check
+|  Firmware Check (2021.5.31) (bundled) = /usr/local/lib/python3.8/site-packages/octoprint_firmware_check
+|  GCode Viewer (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/gcodeviewer
+|  Logging (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/logging
+|  MQTT (0.8.10) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_mqtt
+|  MQTT Subscribe (0.1.6) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_mqttsubscribe
+|  Plugin Manager (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/pluginmanager
+|  Software Update (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/softwareupdate
+|  Virtual Printer (bundled) = /usr/local/lib/python3.8/site-packages/octoprint/plugins/virtual_printer
+|  Virtual Printer Settings (1.5.1) = /octoprint/plugins/lib/python3.8/site-packages/octoprint_virtual_printerconfig
+Prefix legend: ! = disabled, # = blacklisted, * = incompatible
+2021-10-15 19:11:30,508 - octoprint.environment - INFO - Detected environment is Python 3.8.10 under Linux (linux). Details:
+|  hardware:
+|    cores: 6
+|    freq: 0.0
+|    ram: 6232674304
+|  os:
+|    bits: 64
+|    id: linux
+|    platform: linux
+|  python:
+|    pip: 21.1.2
+|    version: 3.8.10
+2021-10-15 19:11:30,529 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/webassets...
+2021-10-15 19:11:30,591 - octoprint.server - INFO - Reset webasset folder /octoprint/octoprint/generated/.webassets-cache...
+2021-10-15 19:11:30,757 - octoprint.server - INFO - Shutting down intermediary server...
+2021-10-15 19:11:30,802 - octoprint.server - INFO - Intermediary server shut down
+2021-10-15 19:11:30,803 - octoprint.events - INFO - Processing startup event, this is our first event
+2021-10-15 19:11:30,805 - octoprint.events - INFO - Adding 1 events to queue that were held back before startup event
+2021-10-15 19:11:30,806 - octoprint.filemanager - INFO - Adding backlog items from all storage types to analysis queue...
+2021-10-15 19:11:30,814 - octoprint.server - INFO - Autoconnect on startup is configured, trying to connect to the printer...
+2021-10-15 19:11:30,827 - octoprint.plugins.softwareupdate - INFO - Fetching check overlays from https://plugins.octoprint.org/update_check_overlay.json
+2021-10-15 19:11:30,881 - octoprint.filemanager - INFO - Added 0 items from storage type "local" to analysis queue
+2021-10-15 19:11:30,901 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2021-10-15 19:11:30,936 - octoprint.server - INFO - Trying to connect to configured serial port VIRTUAL
+2021-10-15 19:11:30,986 - octoprint.util.comm - INFO - Changing monitoring state from "Offline" to "Detecting serial connection"
+2021-10-15 19:11:30,987 - octoprint.util.comm - INFO - Serial detection: Performing autodetection with 7 port/baudrate candidates: VIRTUAL@115200, VIRTUAL@250000, VIRTUAL@230400, VIRTUAL@57600, VIRTUAL@38400, VIRTUAL@19200, VIRTUAL@9600
+2021-10-15 19:11:30,987 - octoprint.util.comm - INFO - Serial detection: Trying port VIRTUAL, baudrate 115200
+2021-10-15 19:11:31,035 - octoprint.server.util.watchdog - INFO - Running initial scan on watched folder...
+2021-10-15 19:11:31,049 - octoprint.server.util.watchdog - INFO - ... initial scan done.
+2021-10-15 19:11:31,193 - octoprint.util.comm - INFO - Serial detection: Handshake attempt #1 with timeout 2.0s
+2021-10-15 19:11:31,210 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2021-10-15 19:11:31,220 - octoprint.util.comm - INFO - Changing monitoring state from "Detecting serial connection" to "Operational"
+2021-10-15 19:11:31,275 - octoprint.util.comm - INFO - M110 detected, setting current line number to 0
+2021-10-15 19:11:31,410 - octoprint.util.comm - INFO - Printer reports firmware name "Virtual Marlin 1.0"
+2021-10-15 19:11:31,430 - octoprint.util.comm - INFO - Firmware states that it supports temperature autoreporting
+2021-10-15 19:11:31,457 - octoprint.util.comm - INFO - Firmware states that it supports sd status autoreporting
+2021-10-15 19:11:31,465 - octoprint.util.comm - INFO - Firmware states that it supports emergency GCODEs to be sent without waiting for an acknowledgement first
+2021-10-15 19:11:31,836 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2021-10-15 19:11:31,958 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on 9fb6e423d192._http._tcp.local.' for _http._tcp.local.
+2021-10-15 19:11:31,995 - octoprint.plugins.tracking - INFO - Sent tracking event printer_connected, payload: {'firmware_name': 'Virtual Marlin 1.0', 'printer_port': 'VIRTUAL', 'printer_baudrate': 0}
+2021-10-15 19:11:32,762 - octoprint.plugins.discovery - INFO - Registered 'OctoPrint instance on 9fb6e423d192._octoprint._tcp.local.' for _octoprint._tcp.local.
+2021-10-15 19:11:32,765 - octoprint.plugins.discovery - INFO - Registered OctoPrint instance on 9fb6e423d192 for SSDP
+2021-10-15 19:11:32,951 - octoprint.server - INFO - Listening on http://0.0.0.0:5000
+2021-10-15 19:11:32,957 - octoprint.plugins.mqtt - INFO - Connected to mqtt broker
+2021-10-15 19:11:32,991 - octoprint.plugins.pluginmanager - INFO - Loaded plugin repository data from disk, was still valid
+2021-10-15 19:11:33,342 - octoprint.util.pip - INFO - Using "/usr/local/bin/python -m pip" as command to invoke pip
+2021-10-15 19:11:33,342 - octoprint.util.pip - INFO - pip installs to /usr/local/lib/python3.8/site-packages (writable -> yes), --user flag needed -> no, virtual env -> no
+2021-10-15 19:11:33,342 - octoprint.util.pip - INFO - ==> pip ok -> yes
+2021-10-15 19:11:33,364 - octoprint.plugins.softwareupdate - INFO - Minimum free storage across all update relevant locations is 43.6GB. That is considered sufficient for updating.
+2021-10-15 19:11:33,406 - octoprint.plugins.pluginmanager - INFO - Loaded notice data from disk, was still valid
+2021-10-15 19:11:34,743 - octoprint.plugins.tracking - INFO - Sent tracking event ping, payload: {'octoprint_uptime': 4, 'printer_state': 'OPERATIONAL'}
+2021-10-15 19:11:35,388 - octoprint.plugins.tracking - INFO - Sent tracking event pong, payload: {'version': '1.6.1', 'os': 'linux', 'bits': 64, 'python': '3.8.10', 'pip': '21.1.2', 'cores': 6, 'freq': 0.0, 'ram': 6232674304, 'plugins': 'virtual_printerconfig:1.5.1,mqttsubscribe:0.1.6,mqtt:0.8.10'}
+2021-10-15 19:11:36,382 - octoprint.plugins.tracking - INFO - Sent tracking event startup, payload: {'version': '1.6.1', 'os': 'linux', 'bits': 64, 'python': '3.8.10', 'pip': '21.1.2', 'cores': 6, 'freq': 0.0, 'ram': 6232674304}
+2021-10-15 19:12:39,407 - octoprint.server.util.sockjs - INFO - New connection from client: 172.21.0.1
+2021-10-15 19:12:51,216 - octoprint.server.util.sockjs - INFO - Client connection closed: 172.21.0.1
+2021-10-15 19:26:14,480 - octoprint.server - INFO - Shutting down...
+2021-10-15 19:26:14,534 - octoprint.plugins.mqtt - ERROR - Disconnected from mqtt broker for unknown reasons (network error?), rc = 1
+2021-10-15 19:26:15,075 - octoprint.server - INFO - Calling on_shutdown on plugins
+2021-10-15 19:26:15,076 - octoprint.events - INFO - Processing shutdown event, this will be our last event
+2021-10-15 19:26:15,077 - octoprint.events - INFO - Event loop shut down
+2021-10-15 19:26:15,972 - octoprint.plugins.tracking - INFO - Sent tracking event shutdown, payload: {}
+2021-10-15 19:26:17,572 - octoprint.server - INFO - Goodbye!
