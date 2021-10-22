@@ -36,3 +36,4 @@ yarn-error.log*
 #octoprint stuff
 logs/
 generated/
+preemptive_cache_config.yaml
