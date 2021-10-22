@@ -16,7 +16,7 @@ file_check:
       value: 2021.2.23
   online: true
   possible: true
-  timestamp: 1634319253.851657
+  timestamp: 1634877346.4175563
 firmware_check:
   available: true
   compatible: true
@@ -34,7 +34,7 @@ firmware_check:
       value: 2021.10.11
   online: true
   possible: true
-  timestamp: 1634319253.8541746
+  timestamp: 1634877346.4154086
 mqtt:
   available: false
   compatible: true
@@ -52,7 +52,7 @@ mqtt:
       value: 0.8.10
   online: true
   possible: true
-  timestamp: 1634319253.8585236
+  timestamp: 1634877346.4292681
 mqttsubscribe:
   available: false
   compatible: true
@@ -70,7 +70,7 @@ mqttsubscribe:
       value: 0.1.6
   online: true
   possible: true
-  timestamp: 1634319253.857933
+  timestamp: 1634877346.4348342
 octoprint:
   available: true
   compatible: true
@@ -88,7 +88,7 @@ octoprint:
       value: 1.7.0
   online: true
   possible: true
-  timestamp: 1634319253.8557124
+  timestamp: 1634877346.4407487
 virtual_printerconfig:
   available: false
   compatible: true
@@ -106,4 +106,4 @@ virtual_printerconfig:
       value: 1.5.1
   online: true
   possible: true
-  timestamp: 1634319254.159582
+  timestamp: 1634877346.7608135
