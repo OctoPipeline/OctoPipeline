@@ -18,17 +18,7 @@ const PagesDropdown = () => {
   };
   return (
     <>
-      <a
-        className="lg:text-white lg:hover:text-blueGray-200 text-blueGray-700 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
-        href="#pablo"
-        ref={btnDropdownRef}
-        onClick={(e) => {
-          e.preventDefault();
-          dropdownPopoverShow ? closeDropdownPopover() : openDropdownPopover();
-        }}
-      >
-        Demo Pages
-      </a>
+      
       <div
         ref={popoverDropdownRef}
         className={

@@ -96,6 +96,15 @@ export default function FooterSmall(props) {
                     Freepik
                   </a>
                 </li>
+
+                <li>
+                  <a
+                    href="https://www.creative-tim.com/"
+                    className="text-white hover:text-blueGray-300 text-sm font-semibold block py-1 px-3"
+                  >
+                    Desgin by Creative Tim
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
