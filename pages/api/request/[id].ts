@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { Request } from "../../../util/models/index";
-import connectToDatabase from "../../../util/dbConnect";
-import ApiFuncs from "../../../util/functions";
+import { Request } from "util/models/index";
+import connectToDatabase from "util/dbConnect";
+import ApiFuncs from "util/functions";
 
 const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const method: keyof ApiFuncs = req.method as keyof ApiFuncs;
@@ -13,7 +13,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
 
   const id = req.query.id as string;
 
-  // Potential Responses for /request/:id
+  /**
+   * @description possible response types for the api at /request/[id]
+   */
   const handleCase: ApiFuncs = {
     // Response for GET requests
     GET: async (req: NextApiRequest, res: NextApiResponse) => {

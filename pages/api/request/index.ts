@@ -19,16 +19,16 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // connect to the database
   await connectToDatabase();
 
-  // potential Responses
+  /**
+   * @description possible response types for the api at /request
+   */
   const handleCase: ApiFuncs = {
     // Response for GET requests
     GET: async (req: NextApiRequest, res: NextApiResponse) => {
-      const db = await connectToDatabase(); // connect to database
       res.json(await Request.find({}).catch(catcher));
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      const db = await connectToDatabase(); // connect to database
       res.json(await Request.create(req.body).catch(catcher));
     },
   };

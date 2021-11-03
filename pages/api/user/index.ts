@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import connectToDatabase from "../../../util/dbConnect";
-import { User } from "../../../util/models/index";
-import ApiFuncs from "../../../util/functions";
+import connectToDatabase from "util/dbConnect";
+import { User } from "util/models/index";
+import ApiFuncs from "util/functions";
 
 // to set as response type later
 interface Data {
@@ -20,16 +20,16 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   // connect to the database
   await connectToDatabase();
 
-  // potential Responses
+  /**
+   * @description possible response types for the api at /user
+   */
   const handleCase: ApiFuncs = {
     // Response for GET requests
     GET: async (req: NextApiRequest, res: NextApiResponse) => {
-      const db = await connectToDatabase(); // connect to database
       res.json(await User.find({}).catch(catcher));
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      const db = await connectToDatabase(); // connect to database
       res.json(await User.create(req.body).catch(catcher));
     },
   };

@@ -1,5 +1,5 @@
 import mongoose, { Document, model, Model, Schema } from "mongoose";
-import { IUser } from "./User";
+import { IUser } from "util/models/User";
 
 export enum status {
   SUBMITTED = "SUBMITTED",
@@ -31,6 +31,6 @@ const RequestSchema: Schema = new Schema({
   },
 });
 
-// mongoose.model("Request") ? mongoose.models.RequestSchema
+// TODO: Fix the starting bug where overwriting the request model errors out.
 export const Request: Model<IRequest> =
   mongoose.models.RequestSchema || model("Request", RequestSchema);

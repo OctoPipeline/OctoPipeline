@@ -20,6 +20,6 @@ const UserSchema: Schema = new Schema({
     required: [true, "Please indicate whether this user is an admin"],
   },
 });
-//mongoose.model("User") ? mongoose.models.UserSchema
+// TODO: Fix the starting bug where overwriting the user model errors out.
 export const User: Model<IUser> =
   mongoose.models.UserSchema || model("User", UserSchema);

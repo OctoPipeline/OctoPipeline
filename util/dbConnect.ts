@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 import { User, Request } from "./models/index";
 
-// process.env.MONGODB_URI
+// TODO: replace URI with process.env.MONGODB_URI
 const MONGODB_URI = "mongodb://root:example@localhost:27017/";
 
 if (!MONGODB_URI) {
