@@ -1,0 +1,79 @@
+accessControl:
+  salt: BVQmIOhFz6CNJdo9GFZcANdqzGDiP8XG
+api:
+  key: B76C4FA43E0B4768AAA6664C82276D21
+plugins:
+  action_command_notification:
+    enable: false
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1627392600
+      _important:
+        read_until: 1521111600
+      _octopi:
+        read_until: 1611568800
+      _plugins:
+        read_until: 1631682000
+      _releases:
+        read_until: 1631532900
+  discovery:
+    upnpUuid: d5981dfa-5c46-4bed-9421-7439e3df62df
+  errortracking:
+    unique_id: b06b7ab5-07f8-4d00-a4c2-a59f40f28470
+  gcodeviewer:
+    _config_version: 1
+  mqtt:
+    broker:
+      url: mosquitto
+    publish:
+      baseTopic: octoPrint/printerName
+  mqttsubscribe:
+    _config_version: 3
+    topics:
+    - command: ''
+      disable_popup: false
+      extract: ''
+      rest: ''
+      topic: ''
+      type: post
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: 8b5b76f8-2f41-46b8-b808-7628dc61eecc
+  virtual_printer:
+    _config_version: 1
+    enabled: true
+printerProfiles:
+  default: _default
+serial:
+  autoconnect: true
+  baudrate: 0
+  port: VIRTUAL
+server:
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: G29ShVRk61OhzJ6OXqlNfllcZRolq6qX
+  seenWizards:
+    backup: null
+    corewizard: 4
+    tracking: null
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
+webcam:
+  timelapseEnabled: false
+  watermark: false
+  webcamEnabled: false

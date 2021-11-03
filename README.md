@@ -12,6 +12,17 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+
+### Getting Started with docker
+
+You can run this project with Docker Compose. 
+
+```bash
+docker-compose up
+```
+
+This will start the nextjs frontend and expose on port 3000 --> [http://localhost:3000](http://localhost:3000). Additionally you can access the OctoPrint simulator on [http://localhost:80](http://localhost:80) and the mongo express visualizer on [http://localhost:8081](http://localhost:8081).
+
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
 [API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.

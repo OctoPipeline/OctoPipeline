@@ -32,3 +32,10 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+#octoprint stuff
+logs/
+generated/
+preemptive_cache_config.yaml
+announcements/
+notices.json
