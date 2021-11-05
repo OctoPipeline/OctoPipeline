@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import connectToDatabase from "../../../util/dbConnect";
-import { Request } from "../../../util/models/index";
-import ApiFuncs from "../../../util/functions";
+import connectToDatabase from "util/dbConnect";
+import { Request } from "util/models/index";
+import ApiFuncs from "util/functions";
 
 interface Data {
   message: string;
