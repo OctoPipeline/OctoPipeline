@@ -37,3 +37,5 @@ yarn-error.log*
 logs/
 generated/
 preemptive_cache_config.yaml
+announcements/
+notices.json
