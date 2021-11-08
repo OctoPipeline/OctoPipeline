@@ -1,10 +1,14 @@
 /* eslint-disable react/jsx-no-target-blank */
 import React from "react";
 import Link from "next/link";
+import type { NextPage } from "next";
+import Head from "next/head";
+import Image from "next/image";
+import styles from "styles/Home.module.css";
 
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footers/FooterSmall";
-export default function Index() {
+const Home: NextPage = () => {
   return (
     <>
       <IndexNavbar fixed />
@@ -231,4 +235,6 @@ export default function Index() {
       <Footer />
     </>
   );
-}
+};
+
+export default Home;
