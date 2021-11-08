@@ -3,8 +3,8 @@ import Link from "next/link";
 
 // components
 
-import Navbar from "components/Navbars/AuthNavbar.js";
-import Footer from "components/Footers/FooterSmall.js";
+import Navbar from "components/Navbars/AuthNavbar";
+import Footer from "components/Footers/FooterSmall";
 
 export default function Landing() {
   return (

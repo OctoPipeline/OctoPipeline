@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // layout for page
 
-import Auth from "layouts/Auth.js";
+import Auth from "layouts/Auth";
 
 export default function Login() {
   return (
@@ -14,9 +14,7 @@ export default function Login() {
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-makerspace border-0">
               <div className="rounded-t mb-0 px-6 py-6">
                 <div className="text-center mb-3">
-                  <h6 className="text-white text-sm font-bold">
-                    Sign in with
-                  </h6>
+                  <h6 className="text-white text-sm font-bold">Sign in with</h6>
                 </div>
                 <div className="btn-wrapper text-center">
                   <button
@@ -25,7 +23,6 @@ export default function Login() {
                   >
                     MakerSpace LDAP
                   </button>
-   
                 </div>
                 <hr className="mt-6 border-b-1 border-blueGray-300" />
               </div>
@@ -61,8 +58,7 @@ export default function Login() {
                       placeholder="Password"
                     />
                   </div>
-                  <div>
-                  </div>
+                  <div></div>
 
                   <div className="text-center mt-6">
                     <button

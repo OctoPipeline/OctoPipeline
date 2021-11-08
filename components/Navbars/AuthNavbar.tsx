@@ -2,9 +2,9 @@ import React from "react";
 import Link from "next/link";
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown.js";
+import IndexDropdown from "components/Dropdowns/IndexDropdown";
 
-export default function Navbar(props) {
+export default function Navbar(props: any) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
     <>
@@ -47,12 +47,18 @@ export default function Navbar(props) {
               </li>
 
               <li className="flex items-center">
-                <Link href="/auth/login" target="_blank">
+                <Link href="/auth/login" passHref>
                   <button
                     className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                     type="button"
                   >
-                    <i className="fas fa-user"></i> Log in/ Sign Up
+                    <a
+                      target="_blank"
+                      href="https://discord.gg/Zy8GeCx"
+                      rel="noreferrer noopener"
+                    >
+                      <i className="fab fa-discord"></i> Help
+                    </a>
                   </button>
                 </Link>
               </li>

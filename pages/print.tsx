@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // layout for page
 
-import Auth from "layouts/Auth.js";
+import Auth from "layouts/Auth";
 
 export default function Login() {
   return (
@@ -14,9 +14,7 @@ export default function Login() {
             <div className="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-makerspace border-0">
               <div className="rounded-t mb-0 px-6 py-6">
                 <div className="text-center mb-3">
-                  <h1 className="text-white text-5xl font-bold">
-                    Print
-                  </h1>
+                  <h1 className="text-white text-5xl font-bold">Print</h1>
                 </div>
               </div>
               <div className="flex-auto px-4 lg:px-10 py-10 pt-0">
@@ -48,8 +46,7 @@ export default function Login() {
                       placeholder="Printer Name"
                     />
                   </div>
-                  <div>
-                  </div>
+                  <div></div>
 
                   <div className="text-center mt-6">
                     <button
@@ -62,7 +59,6 @@ export default function Login() {
                 </form>
               </div>
             </div>
-           
           </div>
         </div>
       </div>

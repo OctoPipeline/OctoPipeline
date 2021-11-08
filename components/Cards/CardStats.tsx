@@ -10,7 +10,7 @@ export default function CardStats({
   statDescripiron,
   statIconName,
   statIconColor,
-}) {
+}: any) {
   return (
     <>
       <div className="relative flex flex-col min-w-0 break-words bg-white rounded mb-6 xl:mb-0 shadow-lg">

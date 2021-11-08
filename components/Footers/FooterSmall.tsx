@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function FooterSmall(props) {
+export default function FooterSmall(props: any) {
   return (
     <>
       <footer
@@ -18,7 +18,7 @@ export default function FooterSmall(props) {
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a target="_blank" href="https://discord.gg/Zy8GeCx">
+                <a href="https://discord.gg/Zy8GeCx">
                   <i className="fab fa-discord"></i>
                 </a>
               </button>
@@ -26,7 +26,7 @@ export default function FooterSmall(props) {
                 className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a href="https://twitter.com/utdmakerspace" target="_blank">
+                <a href="https://twitter.com/utdmakerspace">
                   <i className="fab fa-twitter"></i>
                 </a>
               </button>
@@ -34,7 +34,7 @@ export default function FooterSmall(props) {
                 className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a target="_blank" href="https://facebook.com/utdmakerspace">
+                <a href="https://facebook.com/utdmakerspace">
                   {" "}
                   <i className="fab fa-facebook-square"></i>
                 </a>
@@ -43,10 +43,7 @@ export default function FooterSmall(props) {
                 className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a
-                  target="_blank"
-                  href="https://www.instagram.com/utdmakerspace/"
-                >
+                <a href="https://www.instagram.com/utdmakerspace/">
                   <i className="fab fa-instagram"></i>
                 </a>
               </button>
@@ -55,14 +52,8 @@ export default function FooterSmall(props) {
                 className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
                 type="button"
               >
-                <a
-                  href="https://www.linkedin.com/company/40749650"
-                  target="_blank"
-                >
-                  <i
-                    className="fab fa-linkedin"
-                    href="https://www.linkedin.com/company/40749650"
-                  ></i>
+                <a href="https://www.linkedin.com/company/40749650">
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </button>
             </div>
