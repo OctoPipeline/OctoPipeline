@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "next/link";
+import { signIn, signOut, useSession } from "next-auth/client";
 // components
 
 import IndexDropdown from "components/Dropdowns/IndexDropdown";
 
 export default function Navbar(props: any) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [session, loading] = useSession();
   return (
     <>
       <nav className="top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-makerspace shadow">
@@ -47,14 +49,30 @@ export default function Navbar(props: any) {
               </li>
 
               <li className="flex items-center">
-                <Link href="/auth/login">
-                  <button
-                    className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                    type="button"
-                  >
-                    <i className="fas fa-user"></i> Log in/ Sign Up
-                  </button>
-                </Link>
+                {!session && (
+                  <>
+                    <Link href="/auth/login">
+                      <button
+                        className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                        type="button"
+                        onClick={signIn}
+                      >
+                        <i className="fas fa-user"></i> Log in/ Sign Up
+                      </button>
+                    </Link>
+                  </>
+                )}
+                {session && (
+                  <>
+                    <button
+                      className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={signOut}
+                    >
+                      Log Out
+                    </button>
+                  </>
+                )}
               </li>
             </ul>
           </div>
