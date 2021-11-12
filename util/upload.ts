@@ -1,7 +1,7 @@
 import axios from "axios";
 const FormData = require("form-data");
 
-function upload(file: any, filename: string) {
+export function upload(file: any, filename: string) {
   let form = new FormData();
 
   form.append("file", file, {
