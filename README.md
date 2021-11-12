@@ -21,7 +21,7 @@ You can run this project with Docker Compose.
 docker-compose up
 ```
 
-This will start the nextjs frontend and expose on port 3000 --> [http://localhost:3000](http://localhost:3000). Additionally you can access the 
+This will start the nextjs frontend and expose on port 3000 --> [http://localhost:3000](http://localhost:3000). Additionally you can access the OctoPrint simulator on [http://localhost:80](http://localhost:80) and the mongo express visualizer on [http://localhost:8081](http://localhost:8081).
 
 You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
