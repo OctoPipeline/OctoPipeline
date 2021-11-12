@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@popperjs/core": "^2.10.2",
     "chart.js": "^3.6.0",
+    "ldapjs": "^2.3.1",
     "mongoose": "^6.0.12",
     "next": "11.1.2",
     "next-auth": "^3.29.0",
@@ -24,6 +25,7 @@
   "devDependencies": {
     "@types/chart.js": "^2.9.34",
     "@types/googlemaps": "^3.43.3",
+    "@types/ldapjs": "^2.2.2",
     "@types/react": "17.0.27",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
