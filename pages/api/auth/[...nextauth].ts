@@ -1,11 +1,44 @@
+import { NextApiRequest, NextApiResponse } from "next";
 import ldap from "ldapjs";
 import NextAuth, { Session, User } from "next-auth";
-import { Awaitable } from "next-auth/internals/utils";
-import { JWT } from "next-auth/jwt";
 import Providers from "next-auth/providers";
+import { JWT } from "next-auth/jwt";
 
-export default NextAuth({
+const options: any = {
   providers: [
+    Providers.Email({
+      server: {
+        host: process.env.EMAIL_SERVER_HOST,
+        port: process.env.EMAIL_SERVER_PORT,
+        auth: {
+          user: process.env.EMAIL_SERVER_USER,
+          pass: process.env.EMAIL_SERVER_PASSWORD,
+        },
+      },
+      from: process.env.EMAIL_FROM,
+    }),
+    Providers.Credentials({
+      name: "Credentials",
+      credentials: {
+        username: { label: "Username", type: "text", placeholder: "johndoe" },
+        password: { label: "Password", type: "password" },
+      },
+      authorize: (credentials) => {
+        // TODO: update hardcode to lookup mongo db for user
+        if (
+          credentials.username === "john" &&
+          credentials.password === "test"
+        ) {
+          return {
+            id: 2,
+            name: "John",
+            email: "john@exmaple.com",
+          };
+        }
+        return null;
+      },
+    }),
+    // NOT SURE IF LDAP WORKS, BUT IT CONNECTS TO URI
     Providers.Credentials({
       name: "LDAP",
       credentials: {
@@ -13,29 +46,35 @@ export default NextAuth({
         password: { label: "Password", type: "password" },
       },
       async authorize(credentials, req) {
-        // You might want to pull this call out so we're not making a new LDAP client on every login attemp
         const client = ldap.createClient({
           url: process.env.LDAP_URI as string,
         });
 
         // Essentially promisify the LDAPJS client.bind function
         return new Promise((resolve, reject) => {
-          client.bind(credentials.username, credentials.password, (error) => {
-            if (error) {
-              console.error("Failed");
-              reject();
-            } else {
-              console.log("Logged in");
-              resolve({
-                username: credentials.username,
-                password: credentials.password,
-              });
+          client.bind(
+            credentials.username,
+            credentials.password,
+            (error: any) => {
+              if (error) {
+                console.error("Failed");
+                reject();
+              } else {
+                console.log("Logged in");
+                resolve({
+                  username: credentials.username,
+                  password: credentials.password,
+                });
+              }
             }
-          });
+          );
         });
       },
     }),
   ],
+  session: {
+    jwt: true,
+  },
   callbacks: {
     async jwt({ token, user }: { token: JWT; user: User }) {
       const isSignIn = user ? true : false;
@@ -45,26 +84,18 @@ export default NextAuth({
       }
       return token;
     },
-    async session({
-      session,
-      token,
-    }: {
-      session: Session;
-      token: JWT;
-    }): Promise<Session> {
-      return { ...session, user: { name: token.username as string } };
+    async session({ session, token }: { session: Session; token: User }) {
+      return { ...session, user: { username: token.username } };
     },
   },
-  secret: process.env.NEXTAUTH_SECRET,
-  jwt: {
-    secret: process.env.NEXTAUTH_SECRET,
-    encryption: true, // Very important to encrypt the JWT, otherwise you're leaking username+password into the browser
+  // TODO: Add mongodb adapter instead of sqlite for email sso
+  database: {
+    type: "sqlite",
+    database: ":memory:",
+    synchronize: true,
   },
-  session: {
-    jwt: true,
-    maxAge: 30 * 24 * 60 * 60, // 30 days
-  },
-  pages: {
-    signIn: "/auth/signIn",
-  },
-});
+};
+
+// eslint-disable-next-line import/no-anonymous-default-export
+export default (req: NextApiRequest, res: NextApiResponse) =>
+  NextAuth(req, res, options);
