@@ -1,7 +1,7 @@
 import axios from "axios";
 const FormData = require("form-data");
 
-export function upload(file: any, filename: string) {
+export async function upload(file: any, filename: string) {
   let form = new FormData();
 
   form.append("file", file, {
@@ -12,17 +12,19 @@ export function upload(file: any, filename: string) {
     baseURL: "http://localhost:80/api/",
     headers: {
       ...form.getHeaders(),
-      "X-Api-Key": "31331488D0734D6D9AA373F7C644D037",
+      "X-Api-Key": process.env.OCTOPRINT_API_KEY,
       "Content-Length": form.getLengthSync(),
     },
   };
 
-  axios
+  const status = axios
     .post("/files/local", form, config)
     .then((res) => {
-      return res;
+      return true;
     })
     .catch((err) => {
-      return err;
+      return false;
     });
+
+  return status;
 }
