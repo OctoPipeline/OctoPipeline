@@ -11,7 +11,7 @@ export interface IRequest extends Document {
   status: status;
   gcode: string;
   owner: Pick<IUser, "email">;
-  approver: Pick<IUser, "email">;
+  approver?: Pick<IUser, "email">;
 }
 
 const RequestSchema: Schema = new Schema({
