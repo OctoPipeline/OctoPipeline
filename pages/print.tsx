@@ -1,11 +1,12 @@
 import React from "react";
 import Link from "next/link";
-
 // layout for page
 
 import Auth from "layouts/Auth";
-
 export default function Login() {
+  const handleSubmission = () => {
+    console.log("hello");
+  };
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -32,7 +33,6 @@ export default function Login() {
                       placeholder="Submission name"
                     />
                   </div>
-
                   <div className="relative w-full mb-3">
                     <label
                       className="block uppercase text-white text-xs font-bold mb-2"
@@ -46,8 +46,17 @@ export default function Login() {
                       placeholder="Printer Name"
                     />
                   </div>
-                  <div></div>
-
+                  <div>
+                    <form
+                      name="print"
+                      encType="multipart/form-data"
+                      action="/endpointurl"
+                      method="post"
+                    >
+                      <input type="file" name="file" />
+                      <button onClick={handleSubmission}>Submit</button>
+                    </form>
+                  </div>
                   <div className="text-center mt-6">
                     <button
                       className="bg-blueGray-800 text-white active:bg-blueGray-600 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 w-full ease-linear transition-all duration-150"
