@@ -3,8 +3,10 @@ import Link from "next/link";
 // layout for page
 
 import Auth from "layouts/Auth";
-import Printing from "components/printing";
 export default function Login() {
+  const handleSubmission = () => {
+    console.log("hello");
+  };
   return (
     <>
       <div className="container mx-auto px-4 h-full">
@@ -45,7 +47,15 @@ export default function Login() {
                     />
                   </div>
                   <div>
-                    <Printing />
+                    <form
+                      name="print"
+                      encType="multipart/form-data"
+                      action="http://localhost:3000/api/request"
+                      method="post"
+                    >
+                      <input type="file" name="file" />
+                      <button onClick={handleSubmission}>Submit</button>
+                    </form>
                   </div>
                   <div className="text-center mt-6">
                     <button
