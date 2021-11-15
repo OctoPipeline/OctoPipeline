@@ -20,10 +20,10 @@ export async function upload(file: any, filename: string) {
   const status = axios
     .post("/files/local", form, config)
     .then((res) => {
-      return true;
+      return res.status;
     })
     .catch((err) => {
-      return false;
+      return err.status;
     });
 
   return status;

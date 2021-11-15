@@ -32,7 +32,12 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      // const status = upload(, ...);
+      // To get the data, use req.body
+
+      // const file = ;
+      // const filename = ;
+
+      const status = upload(file, filename);
       const result = Request.create({ ...req.body, status: status }).catch(
         catcher
       );
