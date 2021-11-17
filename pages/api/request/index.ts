@@ -37,11 +37,9 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
       // const file = ;
       // const filename = ;
 
-      const status = upload(file, filename);
-      const result = Request.create({ ...req.body, status: status }).catch(
-        catcher
-      );
-      res.json({ ...result, status: status });
+      // const status = upload(file, filename);
+      const result = Request.create({ ...req.body }).catch(catcher);
+      res.json({ ...result });
     },
   };
 
