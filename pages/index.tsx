@@ -6,12 +6,25 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "styles/Home.module.css";
 
+import { signIn, signOut, useSession } from "next-auth/client";
+
 import IndexNavbar from "components/Navbars/IndexNavbar";
 import Footer from "components/Footers/FooterSmall";
 const Home: NextPage = () => {
+  const [session, loading] = useSession();
+  console.log(session);
   return (
     <>
-      <IndexNavbar fixed />
+      {!session && (
+        <>
+          <IndexNavbar fixed />
+        </>
+      )}
+      {session && (
+        <>
+          <IndexNavbar fixed />
+        </>
+      )}
       <section className="header relative">
         <div className="container mx-auto px-4 pb-32 pt-48">
           <div className="items-center flex flex-wrap">
