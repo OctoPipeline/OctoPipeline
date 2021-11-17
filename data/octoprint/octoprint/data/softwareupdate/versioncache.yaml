@@ -1,4 +1,4 @@
-__version: 1.6.1
+__version: 1.7.0
 file_check:
   available: false
   compatible: true
@@ -16,17 +16,17 @@ file_check:
       value: 2021.2.23
   online: true
   possible: true
-  timestamp: 1634877346.4175563
+  timestamp: 1636748258.9729695
 firmware_check:
-  available: true
+  available: false
   compatible: true
   disabled: false
   error: null
-  hash: 622459257bd1eaff83fb15d1869ec695
+  hash: 2cc0c5c664767763a036f68d2318d063
   information:
     local:
-      name: 2021.5.31
-      value: 2021.5.31
+      name: 2021.10.11
+      value: 2021.10.11
     needs_online: true
     remote:
       name: 2021.10.11
@@ -34,7 +34,7 @@ firmware_check:
       value: 2021.10.11
   online: true
   possible: true
-  timestamp: 1634877346.4154086
+  timestamp: 1636748258.9510124
 mqtt:
   available: false
   compatible: true
@@ -52,7 +52,7 @@ mqtt:
       value: 0.8.10
   online: true
   possible: true
-  timestamp: 1634877346.4292681
+  timestamp: 1636748258.9796813
 mqttsubscribe:
   available: false
   compatible: true
@@ -70,25 +70,25 @@ mqttsubscribe:
       value: 0.1.6
   online: true
   possible: true
-  timestamp: 1634877346.4348342
+  timestamp: 1636748258.9663873
 octoprint:
   available: true
   compatible: true
   disabled: false
   error: null
-  hash: be11972c2890e020f8fd6f6c636611c4
+  hash: d54d16d86934a5503b511cefe401f218
   information:
     local:
-      name: 1.6.1
-      value: 1.6.1
+      name: 1.7.0
+      value: 1.7.0
     needs_online: true
     remote:
-      name: 1.7.0
-      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.7.0
-      value: 1.7.0
+      name: 1.7.2
+      release_notes: https://github.com/OctoPrint/OctoPrint/releases/tag/1.7.2
+      value: 1.7.2
   online: true
   possible: true
-  timestamp: 1634877346.4407487
+  timestamp: 1636748259.0196655
 virtual_printerconfig:
   available: false
   compatible: true
@@ -106,4 +106,4 @@ virtual_printerconfig:
       value: 1.5.1
   online: true
   possible: true
-  timestamp: 1634877346.7608135
+  timestamp: 1636748259.3768995

@@ -16,18 +16,19 @@ services:
     ports:
       - 1883:1883
   openldap:
-    image: docker.io/bitnami/openldap:2.5
+    image: docker.io/osixia/openldap:1.5.0
     container_name: openldap
+    # TODO: Debug why importing db fails
+    # volumes:
+    #   - ./data/openldap/data:/var/lib/ldap
+    #   - ./data/openldap/slapd.d:/etc/ldap/slapd.d
     ports:
-      - 1389:1389
-      - 1636:1636
+      - 389:389
+      - 636:636
     environment:
-      - LDAP_ADMIN_USERNAME=admin
-      - LDAP_ADMIN_PASSWORD=test1234
-      - LDAP_USERS=user01,user02
-      - LDAP_PASSWORDS=password1,password2
-    volumes:
-      - ./data/openldap:/bitnami/openldap
+      LDAP_ORGANISATION: SampleLDAP
+      LDAP_DOMAIN: sample-ldap.com
+      LDAP_ADMIN_PASSWORD: sample123
   mongo:
     image: mongo
     restart: always
