@@ -17,6 +17,10 @@ const options: any = {
       },
       from: process.env.EMAIL_FROM,
     }),
+    Providers.GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
     Providers.Credentials({
       name: "Credentials",
       credentials: {
