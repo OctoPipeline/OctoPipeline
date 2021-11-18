@@ -1,12 +1,23 @@
+
+import { useSession, signIn, signOut } from "next-auth/client";
+import { useRouter } from 'next/router'
+
+import Link from "next/link";
 import React from "react";
 
-import Navbar from "components/Navbars/AuthNavbar";
+import Navbar from "components/Navbars/UserNavbar";
 import CardTable from "components/Cards/CardTable";
 import Footer from "components/Footers/FooterSmall";
+import Signin from "components/others/signin";
 
 export default function Profile() {
-  return (
-    <>
+
+  const [session, loading] = useSession();
+  const router = useRouter()
+
+  if (session) {
+    return (
+      <>
       <Navbar transparent />
       <main className="profile-page">
         <section className="relative block h-500-px">
@@ -38,12 +49,14 @@ export default function Profile() {
                 <div className="flex flex-wrap justify-end">
                   <div className="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
                     <div className="py-6 px-3 mt-32 sm:mt-0">
+                      <Link href="/print">
                       <button
                         className="bg-blueGray-700 active:bg-blueGray-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
-                        type="button"
+                        type="button" 
                       >
                         Print
                       </button>
+                      </Link>
                     </div>
                   </div>
                   <div className="w-full lg:w-4/12 px-4 lg:order-1">
@@ -69,12 +82,12 @@ export default function Profile() {
                 </div>
                 <div className="text-center mt-12">
                   <h3 className="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
-                    Jenna Stones
+                    {session.user?.name}
                   </h3>
 
                   <div className="mb-2 text-blueGray-600">
                     <i className="fas fa-envelope mr-2 text-lg text-blueGray-400"></i>
-                    zxy123456@utdallas.edu
+                    {session.user?.email}
                   </div>
                 </div>
 
@@ -90,5 +103,13 @@ export default function Profile() {
       </main>
       <Footer />
     </>
+    );
+  }
+  
+ 
+  return (
+    <>
+      <Signin/>
+    </> 
   );
 }

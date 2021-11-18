@@ -23,7 +23,7 @@ export default function CardTable({ color }: any) {
                   (color === "light" ? "text-blueGray-700" : "text-white")
                 }
               >
-                Print Request
+                Print Requests
               </h3>
             </div>
           </div>

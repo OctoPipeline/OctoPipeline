@@ -3,7 +3,7 @@ import Link from "next/link";
 import { signIn, signOut, useSession } from "next-auth/client";
 // components
 
-import IndexDropdown from "components/Dropdowns/IndexDropdown";
+import UserDropdown from "components/Dropdowns/UserDropdown";
 
 export default function Navbar(props: any) {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -47,7 +47,7 @@ export default function Navbar(props: any) {
               <li className="flex items-center">
                 {!session && (
                   <>
-                    
+
                       <button
                         className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                         type="button"
@@ -55,13 +55,13 @@ export default function Navbar(props: any) {
                       >
                         <i className="fas fa-user"></i> Log in/ Sign Up
                       </button>
-                    
+                 
                   </>
                 )}
                 {session && (
                   <>
                     <li className="flex items-center">
-                      <IndexDropdown />
+                      <UserDropdown />
                     </li>
                     <button
                       className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
