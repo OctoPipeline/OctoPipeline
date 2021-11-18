@@ -47,15 +47,15 @@ export default function Navbar(props: any) {
               <li className="flex items-center">
                 {!session && (
                   <>
-                    
-                      <button
-                        className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
-                        type="button"
-                        onClick={signIn}
-                      >
-                        <i className="fas fa-user"></i> Log in/ Sign Up
-                      </button>
-                    
+                    <button
+                      className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                      type="button"
+                      onClick={() => {
+                        signIn();
+                      }}
+                    >
+                      <i className="fas fa-user"></i> Log in/ Sign Up
+                    </button>
                   </>
                 )}
                 {session && (
@@ -66,7 +66,9 @@ export default function Navbar(props: any) {
                     <button
                       className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => {signOut({ callbackUrl: 'http://localhost:3000/' })}}
+                      onClick={() => {
+                        signOut({ callbackUrl: "http://localhost:3000/" });
+                      }}
                     >
                       Log Out
                     </button>
