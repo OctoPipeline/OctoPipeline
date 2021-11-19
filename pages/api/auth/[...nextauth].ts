@@ -80,7 +80,7 @@ const options: any = {
     jwt: true,
   },
   callbacks: {
-    async jwt({ token, user }: { token: JWT; user: User }) {
+    async jwt(token: JWT, user: User) {
       const isSignIn = user ? true : false;
       if (isSignIn) {
         token.username = user.username;
@@ -88,8 +88,9 @@ const options: any = {
       }
       return token;
     },
-    async session({ session, user }: { session: Session; user: User }) {
-      return { ...session, sub: user.sub };
+    async session(session: Session, user: User) {
+      console.log("session", session, user);
+      return { ...session, user: { ...user }, sub: user.sub };
     },
   },
   // TODO: Add mongodb adapter instead of sqlite for email sso

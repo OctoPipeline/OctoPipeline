@@ -22,6 +22,7 @@ const Home: NextPage = () => {
       )}
       {session && (
         <>
+          {console.log(session.user)}
           <IndexNavbar fixed />
         </>
       )}
