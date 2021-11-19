@@ -47,9 +47,9 @@ export default function Navbar(props: any) {
               <li className="flex items-center">
                 {!session && (
                   <>
-                    <li className="flex items-center">
-                      <IndexDropdown />
-                    </li>
+                    {/* <li className="flex items-center"> */}
+                    <IndexDropdown />
+                    {/* </li> */}
                     <button
                       className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                       type="button"
@@ -63,9 +63,9 @@ export default function Navbar(props: any) {
                 )}
                 {session && (
                   <>
-                    <li className="flex items-center">
-                      <IndexDropdown />
-                    </li>
+                    {/* <li className="flex items-center"> */}
+                    <IndexDropdown />
+                    {/* </li> */}
                     <button
                       className="bg-blueGray-700 text-white active:bg-blueGray-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
                       type="button"
