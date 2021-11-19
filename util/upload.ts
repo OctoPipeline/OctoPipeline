@@ -11,7 +11,7 @@ export async function upload(filepath: string, filename: string) {
     filepath: filename,
   });
 
-  const config = {
+  const uploadConfig = {
     baseURL: "http://localhost:80/api/",
     headers: {
       ...form.getHeaders(),
@@ -20,8 +20,8 @@ export async function upload(filepath: string, filename: string) {
     },
   };
 
-  const status = axios
-    .post("/files/local", form, config)
+  const uploadStatus = await axios
+    .post("/files/local", form, uploadConfig)
     .then((res) => {
       return res.status;
     })
@@ -29,5 +29,32 @@ export async function upload(filepath: string, filename: string) {
       return err.status;
     });
 
-  return status;
+  console.log("Upload Status be like:", uploadStatus);
+
+  const printConfig: any = {
+    baseURL: "http://localhost:80/api/",
+    headers: {
+      "Content-Type": "application/json",
+      "X-Api-Key": process.env.OCTOPRINT_API_KEY,
+    },
+  };
+
+  const printStatus = await axios
+    .post(
+      `files/local/${filename}`,
+      {
+        command: "select",
+        print: true,
+      },
+      printConfig
+    )
+    .then((res) => {
+      return res.status;
+    })
+    .catch((err) => {
+      return err.status;
+    });
+
+  console.log("Print Status be like:", printStatus);
+  return printStatus;
 }
