@@ -2,20 +2,36 @@ import { useSession, signIn, signOut } from "next-auth/client";
 import { useRouter } from "next/router";
 
 import Link from "next/link";
-import React, { Fragment } from "react";
+import React, { Fragment, Suspense, useEffect, useState } from "react";
 
 import Navbar from "components/Navbars/UserNavbar";
 import CardTable from "components/Cards/CardTable";
 import Footer from "components/Footers/FooterSmall";
 import Signin from "components/others/signin";
 
+import { useRecoilState } from "recoil";
+import { subject } from "recoil/state";
+
 export default function Profile() {
+  const [requestCount, setRequestCount] = useState(0);
+  const [approvalCount, setApprovalCount] = useState(0);
   const [session, loading] = useSession();
   const router = useRouter();
+  const [user, setSubject] = useRecoilState(subject);
 
-  if (!session && !loading) {
-    return <Signin />;
-  }
+  useEffect(() => {
+    // temp fix while auth broke
+    if (session || !session) {
+      setSubject({
+        email: session?.user?.email as string,
+        next_id: session?.sub as string,
+      });
+    }
+  }, [session, setSubject]);
+
+  // if (!session && !loading) {
+  //   return <Signin />;
+  // }
 
   return (
     <Fragment>
@@ -64,7 +80,7 @@ export default function Profile() {
                     <div className="flex justify-center py-4 lg:pt-4 pt-8">
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          22
+                          {requestCount}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Requests
@@ -72,7 +88,7 @@ export default function Profile() {
                       </div>
                       <div className="mr-4 p-3 text-center">
                         <span className="text-xl font-bold block uppercase tracking-wide text-blueGray-600">
-                          10
+                          {approvalCount}
                         </span>
                         <span className="text-sm text-blueGray-400">
                           Approved
@@ -87,15 +103,21 @@ export default function Profile() {
                   </h3>
 
                   <div className="mb-2 text-blueGray-600">
-                    <i className="fas fa-envelope mr-2 text-lg text-blueGray-400"></i>
+                    <i className="fas fa-envelope mr-2 text-lg text-blueGray-400" />
                     {session?.user?.email}
                   </div>
                 </div>
 
                 <div className="flex flex-wrap mt-4">
-                  <div className="w-full mb-12 px-4">
-                    <CardTable color="dark" />
-                  </div>
+                  <Suspense fallback={<div>Loading...</div>}>
+                    <div className="w-full mb-12 px-4">
+                      <CardTable
+                        color="dark"
+                        setReq={setRequestCount}
+                        setApr={setApprovalCount}
+                      />
+                    </div>
+                  </Suspense>
                 </div>
               </div>
             </div>

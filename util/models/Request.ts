@@ -1,17 +1,30 @@
 import mongoose, { Document, model, Model, Schema } from "mongoose";
-import { IUser } from "util/models/User";
 
 export enum status {
+  DRAFT = "DRAFT",
   SUBMITTED = "SUBMITTED",
   APPROVED = "APPROVED",
   PRINTING = "PRINTING",
 }
-
+export interface I_Request {
+  status: status;
+  gcode: string;
+  owner_email: string;
+  owner_id: string;
+  approver?: string;
+  approval_date?: Date;
+  submitted_date: Date;
+  expected_price?: number;
+}
 export interface IRequest extends Document {
   status: status;
   gcode: string;
-  owner: Pick<IUser, "email">;
-  approver?: Pick<IUser, "email">;
+  owner_email: string;
+  owner_id: string;
+  approver?: string;
+  approval_date?: Date;
+  submitted_date: Date;
+  expected_price?: number;
 }
 
 const RequestSchema: Schema = new Schema({
@@ -22,12 +35,26 @@ const RequestSchema: Schema = new Schema({
   gcode: {
     type: String,
   },
-  owner: {
+  owner_id: {
     type: String,
-    required: [true, "Please provide an owner for this request."],
+    required: [true, "Please provide an owner id for this request."],
+  },
+  owner_email: {
+    type: String,
+    required: [true, "Please provide an owner email for this request."],
   },
   approver: {
     type: String,
+  },
+  approval_date: {
+    type: Date,
+  },
+  submitted_date: {
+    type: Date,
+    required: [true, "Please provide a date for this request."],
+  },
+  expected_price: {
+    type: Number,
   },
 });
 

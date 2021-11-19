@@ -26,20 +26,11 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const handleCase: ApiFuncs = {
     // Response for GET requests
     GET: async (req: NextApiRequest, res: NextApiResponse) => {
-      res.json({
-        message: "hello world",
-      });
+      res.json(await Request.find({}).catch(catcher));
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      // To get the data, use req.body
-
-      // const file = ;
-      // const filename = ;
-
-      // const status = upload(file, filename);
-      const result = Request.create({ ...req.body }).catch(catcher);
-      res.json({ ...result });
+      res.json(await Request.create(req.body).catch(catcher));
     },
   };
 

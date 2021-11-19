@@ -1,5 +1,10 @@
 import mongoose, { Document, model, Model, Schema } from "mongoose";
 
+export interface I_User {
+  name: string;
+  email: string;
+  admin: boolean;
+}
 export interface IUser extends Document {
   name: string;
   email: string;
