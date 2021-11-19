@@ -19,7 +19,7 @@ export default function Login() {
       formData.append("printerName", printerName);
       formData.append("toBePrintedFile", file);
 
-      const response = await axios.post("/api/request", formData);
+      const response = await axios.post("/api/print", formData);
       return response;
     }
     return;

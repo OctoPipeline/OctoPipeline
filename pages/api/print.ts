@@ -2,9 +2,14 @@ import { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
+import { upload } from "util/upload";
 
-export default async function file(req: NextApiRequest, res: NextApiResponse) {
+export default async function fileParse(
+  req: NextApiRequest,
+  res: NextApiResponse
+) {
   const formData = new formidable.IncomingForm();
+  // console.log(formData)
   const fileData = {
     fileName: "",
     fileType: "",
@@ -15,16 +20,17 @@ export default async function file(req: NextApiRequest, res: NextApiResponse) {
     selectedPrinter: "",
     uploadedBy: "",
     uploadedOn: "",
+    filePath: "",
   };
 
   formData.uploadDir = "./uploads";
   formData.keepExtensions = true;
 
-  formData.on("file", (field, file) => {
+  formData.on("fileBegin", (field, file) => {
     const fileExtension = getFileExtension(file.originalFilename);
     const fileName = uuidv4() + "." + fileExtension;
     file.filepath = path.join(formData.uploadDir, fileName);
-
+    console.log(file.filepath);
     fileData.fileName = fileName;
     fileData.fileType = file.mimetype;
     fileData.fileExtension = fileExtension;
@@ -36,13 +42,18 @@ export default async function file(req: NextApiRequest, res: NextApiResponse) {
     fileData.submissionName = fields.submissionName;
     fileData.uploadedOn = new Date().toISOString();
     fileData.fileSize = files.toBePrintedFile.size;
+    fileData.filePath = files.toBePrintedFile.filepath;
 
     // TODO: Add user id to file metadata
     // TODO: Store file and metadata in database
     console.log(fileData);
   });
 
-  res.json({ data: formData });
+  formData.on("end", async () => {
+    const sendToOctoPrint = await upload(fileData.filePath, fileData.fileName);
+    return res.status(200).json({ msg: "File uploaded successfully" });
+  });
+  return res.status(500);
 }
 
 function getFileExtension(filename: string) {

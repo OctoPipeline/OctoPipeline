@@ -1,8 +1,11 @@
 import axios from "axios";
+import { readFileSync } from "fs";
 const FormData = require("form-data");
+import path from "path";
 
-export async function upload(file: any, filename: string) {
+export async function upload(filepath: string, filename: string) {
   let form = new FormData();
+  const file = readFileSync(path.join("./", filepath));
 
   form.append("file", file, {
     filepath: filename,
