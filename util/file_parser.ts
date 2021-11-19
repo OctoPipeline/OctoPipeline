@@ -1,10 +1,9 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import formidable from "formidable";
-import fs from "fs";
 import path from "path";
 import { v4 as uuidv4 } from "uuid";
 
-export default async function print(req: NextApiRequest, res: NextApiResponse) {
+export default async function file(req: NextApiRequest, res: NextApiResponse) {
   const formData = new formidable.IncomingForm();
   const fileData = {
     fileName: "",
@@ -21,7 +20,7 @@ export default async function print(req: NextApiRequest, res: NextApiResponse) {
   formData.uploadDir = "./uploads";
   formData.keepExtensions = true;
 
-  formData.on("fileBegin", (field, file) => {
+  formData.on("file", (field, file) => {
     const fileExtension = getFileExtension(file.originalFilename);
     const fileName = uuidv4() + "." + fileExtension;
     file.filepath = path.join(formData.uploadDir, fileName);
@@ -42,6 +41,8 @@ export default async function print(req: NextApiRequest, res: NextApiResponse) {
     // TODO: Store file and metadata in database
     console.log(fileData);
   });
+
+  res.json({ data: formData });
 }
 
 function getFileExtension(filename: string) {
