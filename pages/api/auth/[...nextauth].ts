@@ -89,7 +89,7 @@ const options: any = {
       return token;
     },
     async session({ session, user }: { session: Session; user: User }) {
-      return { ...session, user: { username: user.username }, sub: user.sub };
+      return { ...session, sub: user.sub };
     },
   },
   // TODO: Add mongodb adapter instead of sqlite for email sso
