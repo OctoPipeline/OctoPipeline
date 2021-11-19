@@ -17,6 +17,10 @@ const options: any = {
       },
       from: process.env.EMAIL_FROM,
     }),
+    Providers.GitHub({
+      clientId: process.env.GITHUB_ID,
+      clientSecret: process.env.GITHUB_SECRET,
+    }),
     Providers.Credentials({
       name: "Credentials",
       credentials: {
@@ -84,8 +88,8 @@ const options: any = {
       }
       return token;
     },
-    async session({ session, token }: { session: Session; token: User }) {
-      return { ...session, user: { username: token.username } };
+    async session({ session, user }: { session: Session; user: User }) {
+      return { ...session, user: { username: user.username }, sub: user.sub };
     },
   },
   // TODO: Add mongodb adapter instead of sqlite for email sso

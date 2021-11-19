@@ -2,6 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import connectToDatabase from "util/dbConnect";
 import { Request } from "util/models/index";
 import ApiFuncs from "util/functions";
+import { upload } from "util/upload";
 
 interface Data {
   message: string;
@@ -25,11 +26,22 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   const handleCase: ApiFuncs = {
     // Response for GET requests
     GET: async (req: NextApiRequest, res: NextApiResponse) => {
-      res.json(await Request.find({}).catch(catcher));
+      res.json({
+        message: "hello world",
+      });
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      res.json(await Request.create(req.body).catch(catcher));
+      const formData = new formidable.IncomingForm();
+
+      const fileData = await fileParse(formData);
+      const filePath = fileData.filePath;
+      const fileName = fileData.fileName;
+
+      const status = await upload(filePath, fileName);
+      // const result = Request.create({ ...req.body }).catch(catcher);
+
+      return res.status(status);
     },
   };
 
