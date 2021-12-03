@@ -9,7 +9,7 @@ export default async function fileParse(
   res: NextApiResponse
 ) {
   const formData = new formidable.IncomingForm();
-  // console.log(formData)
+
   const fileData = {
     fileName: "",
     fileType: "",
@@ -30,7 +30,7 @@ export default async function fileParse(
     const fileExtension = getFileExtension(file.originalFilename);
     const fileName = uuidv4() + "." + fileExtension;
     file.filepath = path.join(formData.uploadDir, fileName);
-    console.log(file.filepath);
+
     fileData.fileName = fileName;
     fileData.fileType = file.mimetype;
     fileData.fileExtension = fileExtension;
@@ -50,9 +50,10 @@ export default async function fileParse(
   });
 
   formData.on("end", async () => {
-    const sendToOctoPrint = await upload(fileData.filePath, fileData.fileName);
-    return res.status(200).json({ msg: "File uploaded successfully" });
+    const status = await upload(fileData.filePath, fileData.fileName);
+    return res.status(status);
   });
+
   return res.status(500);
 }
 

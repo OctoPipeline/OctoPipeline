@@ -32,16 +32,13 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     },
     // Response for POST requests
     POST: async (req: NextApiRequest, res: NextApiResponse) => {
-      const formData = new formidable.IncomingForm();
-
-      const fileData = await fileParse(formData);
-      const filePath = fileData.filePath;
-      const fileName = fileData.fileName;
-
-      const status = await upload(filePath, fileName);
+      // const formData = new formidable.IncomingForm();
+      // const fileData = await fileParse(formData);
+      // const filePath = fileData.filePath;
+      // const fileName = fileData.fileName;
+      // const status = await upload(filePath, fileName);
       // const result = Request.create({ ...req.body }).catch(catcher);
-
-      return res.status(status);
+      // return res.status(status);
     },
   };
 

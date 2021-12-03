@@ -10,6 +10,7 @@ export async function upload(filepath: string, filename: string) {
   form.append("file", file, {
     filepath: filename,
   });
+  form.append("print", "true");
 
   const config = {
     baseURL: "http://localhost:80/api/",
